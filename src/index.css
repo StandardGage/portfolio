@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@800&family=Taviraj:wght@200&family=Telex&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root.dark {
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: rgb(38, 38, 38);
+  width: 100%;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  max-width: 1300;
+} */
+
+:root {
+  --tw-gradient-from: rgb(250 250 250);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    --tw-gradient-to: rgb(229 229 229);
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+:root.dark {
+  color: white;
+  --tw-gradient-from: #1e1e1e;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    --tw-gradient-to: #29292e;
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+body {
+  display: flex;
+  justify-items: flex-start;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+div {
+  cursor: default;
+}
+
+nav {
+  display: inline-flex;
+  padding: .6em;
+  font-size: 1.5em;
+  font-family: Proza Libre, sans-serif;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  transition: scale ease-in-out .25s;
+}
+
+i{
+  backface-visibility: hidden;
+}
+
+nav:focus,
+nav:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+} */
