@@ -7,7 +7,6 @@ export default function Carousel(props: { children: any[]; }) {
     const [index, setIndex] = useState(0)
     
     const items = props.children.filter((child) => child != null)
-    console.log(items)
 
     return (
         <div className="flex flex-grow justify-center items-center">

@@ -11,7 +11,7 @@ export default function Header(props: { children: any}) {
 };
 
 function useScrollDirection() {
-  const [scrollDirection, setScrollDirection] = useState(null);
+  const [scrollDirection, setScrollDirection] = useState("neutral");
 
   useEffect(() => {
     let lastScrollY = window.pageYOffset;

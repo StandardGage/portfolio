@@ -6,8 +6,8 @@ export default function ThemeToggle(props:any) {
     return (
         <motion.button 
         initial={{scale:1.5}}
-        whileHover={{scale:1.8}}
-        whileTap={{scale:1.4}}
+        whileHover={{scale:3}}
+        whileTap={{scale:1}}
         onClick={() => {
             var theme = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
             if (theme === 'light') {

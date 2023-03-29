@@ -1,17 +1,16 @@
-import { useState } from 'react'
 import { motion } from 'framer-motion'
 import './App.css'
 import Greeting from './containers/Greeting'
 import Header from './components/Header'
-import Card from './components/Card'
 import ThemeToggle from './components/ThemeToggle'
 import Skills from './containers/Skills'
 import Projects from './containers/Projects'
 import Education from './containers/Education'
 
-export function Navigator(props:any) {
+function Navigator(props: any) {
   return (
     <motion.nav
+      style={{backfaceVisibility: "hidden"}}
       whileHover={{
         scale: 1.3,
       }}
@@ -37,9 +36,11 @@ function App() {
         </div>
       </Header>
       <Greeting></Greeting>
-      <Skills></Skills>
+      <Greeting></Greeting>
+      <Greeting></Greeting>
+      {/* <Skills></Skills>
       <Projects></Projects>
-      <Education></Education>
+      <Education></Education> */}
     </div>
   )
 }

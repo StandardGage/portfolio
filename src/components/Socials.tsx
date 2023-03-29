@@ -7,10 +7,10 @@ import { motion } from "framer-motion"
 export function Social(props: {children:any}) {
     return (
         <motion.li
-            initial={{scale:1}}
+            initial={{scale:2}}
             whileInView={{scale:2}}
-            whileHover={{scale:2.6}}
-            whileTap={{scale:1.9}}>
+            whileHover={{scale:3}}
+            whileTap={{scale:1}}>
                 {props.children}
         </motion.li>
     )
@@ -25,7 +25,7 @@ export default function Socials() {
             </Social>
             {socials.socials.map((social, i) => {
                 return (
-                    <Social key={i}>
+                    <Social key={social.logo}>
                         <a href={social.link} target="_blank">
                         <i className={social.logo}></i>
                         </a>
