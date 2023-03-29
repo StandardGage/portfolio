@@ -21,6 +21,8 @@ import temnet from './assets/temnet/temnet.jpg';
 import salesianum from './assets/salesianum/salesianum.jpg';
 //udel
 import udel from './assets/udel/udel.jpg';
+import brown from './assets/udel/brown.jpg';
+import smith from './assets/udel/smith.jpg';
 
 //agr
 import agr from './assets/agr/agr.jpg';
@@ -172,7 +174,7 @@ const experience = {
             role: "Teaching Assistant",
             company: "University of Delaware",
             duration: "(February 2023 - Present)",
-            image: udel,
+            image: smith,
         },
         {
             role: "Chief Financial Officer",
@@ -190,7 +192,7 @@ const experience = {
             role: "Undergraduate Researcher",
             company: "University of Delaware",
             duration: "(May 2022 - September 2022",
-            image: udel
+            image: brown
         },
         {
             role: "Senior Information Technology Intern",
