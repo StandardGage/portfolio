@@ -6,6 +6,7 @@ import ThemeToggle from './components/ThemeToggle'
 import Skills from './containers/Skills'
 import Projects from './containers/Projects'
 import Education from './containers/Education'
+import Experience from './containers/Experience'
 
 function Navigator(props: any) {
   return (
@@ -40,6 +41,7 @@ function App() {
       <Skills></Skills>
       <Projects></Projects>
       <Education></Education>
+      <Experience></Experience>
     </div>
   )
 }

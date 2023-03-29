@@ -157,15 +157,53 @@ const education = {
             image: udel,
             grade: "3.34",
             classes: [],
-            clubs: [],
+            clubs: ["Alpha Gamma Rho - Chief Financial Officer"],
             awards: []
         }
     ]
+}
+
+const experience = {
+    jobs: [
+        {
+            role: "Teaching Assistant",
+            company: "University of Delaware",
+            duration: "(February 2023 - Present)",
+            image: udel,
+        },
+        {
+            role: "Chief Financial Officer",
+            company: "Alpha Gamma Rho - Beta Upsilon",
+            duration: "(January 2023 - Present)",
+            image: null,
+        },
+        {
+            role: "Lab Assistant",
+            company: "University of Delaware",
+            duration: "(September 2022 - December 2022)",
+            image: udel,
+        },
+        {
+            role: "Undergraduate Researcher",
+            company: "University of Delaware",
+            duration: "(May 2022 - September 2022",
+            image: udel
+        },
+        {
+            role: "Senior Information Technology Intern",
+            company: "Salesianum High School",
+            duration: "(May 2021 - September 2022",
+            image: salesianum
+        }
+
+    ]
+
 }
 
 export {
     socials,
     skills,
     projects,
-    education
+    education,
+    experience
 }
