@@ -15,12 +15,14 @@ export default function Skills() {
                     </li>
                 )})}
             </ol> */}
+            <ol className="flex flex-wrap gap-10">
             {sk.map((skill) => (
-                <div className='w-32 h-24 backdrop-brightness-110 rounded-lg shadow-md justify-end' key={skill}>
-                    <div className={`${skills.skills[skill]} w-min self-center`}></div>
+                <div className='w-32 h-24 backdrop-brightness-110 rounded-lg shadow-md' key={skill}>
+                    <div className={`${skills.skills[skill]} mt-6 scale-150`}></div>
                     <p className="font-taviraj text-md pt-6">{skill}</p>
                 </div>
             ))}
+            </ol>
         </Section>
     )
 }
