@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import { Navigator } from "../App";
 import Socials from "../components/Socials";
-import { GiGuitar } from 'react-icons/gi'
 
 export default function Greeting() {
     return (
@@ -15,7 +13,7 @@ export default function Greeting() {
             </motion.div>
             <motion.div className="group font-telex text-2xl m-20 self-end justify-self-end"
                 initial={{opacity:0}}
-                whileInView={{opacity:1}}
+                animate={{opacity:1}}
                 transition={{delay:.3}}>
                 Extras about me
                 <i className="fa fa-caret-down"></i>

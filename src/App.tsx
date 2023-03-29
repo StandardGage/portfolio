@@ -25,22 +25,20 @@ function App() {
     <div className="App space-y-10">
       <Header>
         <div>
-          <motion.ul initial={{opacity:0}} whileInView={{opacity:1}} className='flex-1 flex-nowrap space-x-2 text-center'>
+          <ul className='flex-1 flex-nowrap space-x-2 text-center'>
             <div className='text-center font-proza text-5xl float-left cursor-default'>GS</div>
             <Navigator><a href='#skills'>Skills</a></Navigator>
             <Navigator><a href='#education'>Education</a></Navigator>
             <Navigator><a href='#employment'>Employment</a></Navigator>
             <Navigator><a href='#contact'>Contact</a></Navigator>
             <ThemeToggle className='float-right'></ThemeToggle>
-          </motion.ul>
+          </ul>
         </div>
       </Header>
       <Greeting></Greeting>
-      <Greeting></Greeting>
-      <Greeting></Greeting>
-      {/* <Skills></Skills>
+      <Skills></Skills>
       <Projects></Projects>
-      <Education></Education> */}
+      <Education></Education>
     </div>
   )
 }

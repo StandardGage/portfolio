@@ -13,6 +13,8 @@ function getMedia(project: { images: string[]; video: string[]; }) {
     ))
     project.images.map((image: string, i: Key) => media.push(
         <motion.img
+        loading="eager"
+        alt={image}
         whileTap={{scale:1.6}}
         key={i}
         initial={{scale:0}}

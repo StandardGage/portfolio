@@ -18,7 +18,9 @@ export default function Carousel(props: { children: any[]; }) {
                 setIndex(index-1)
             }
         }} className={`flex rotate-180 cursor-pointer h-52 ${items.length < 2 ? 'hidden' : ''}`}></AiOutlineRight></motion.div>
-        <div className={`flex items-center justify-center `}>{items[index]}</div>
+        {items.map((item, i) => (
+            <div className={`${i == index ? "block" : "hidden"} flex items-center justify-center `}>{items[i]}</div>
+        ))}
         <motion.div whileHover={{x:[0,5,0], transition:{repeat:Infinity}}}><AiOutlineRight onClick={()=>{
             if (index == items.length-1) {
                 setIndex(0)
