@@ -22,6 +22,9 @@ import salesianum from './assets/salesianum/salesianum.jpg';
 //udel
 import udel from './assets/udel/udel.jpg';
 
+//agr
+import agr from './assets/agr/agr.jpg';
+
 const socials = {
     socials: [
         {
@@ -175,7 +178,7 @@ const experience = {
             role: "Chief Financial Officer",
             company: "Alpha Gamma Rho - Beta Upsilon",
             duration: "(January 2023 - Present)",
-            image: null,
+            image: agr,
         },
         {
             role: "Lab Assistant",
