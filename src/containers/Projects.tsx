@@ -28,7 +28,7 @@ function getMedia(project: { images: string[]; video: string[]; }) {
 
 export default function Projects() {
     return (
-        <Section title="My Projects...">
+        <Section id="projects" title="My Projects...">
             <ol className="flex flex-row flex-wrap gap-10 justify-center">
             <Carousel>
             {projects.projects.map((project, i) => {

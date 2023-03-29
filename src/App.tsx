@@ -28,8 +28,9 @@ function App() {
           <ul className='flex-1 flex-nowrap space-x-2 text-center'>
             <div className='text-center font-proza text-5xl float-left cursor-default'>GS</div>
             <Navigator><a href='#skills'>Skills</a></Navigator>
+            <Navigator><a href='#projects'>Projects</a></Navigator>
             <Navigator><a href='#education'>Education</a></Navigator>
-            <Navigator><a href='#employment'>Employment</a></Navigator>
+            <Navigator><a href='#experience'>Experience</a></Navigator>
             <Navigator><a href='#contact'>Contact</a></Navigator>
             <ThemeToggle className='float-right'></ThemeToggle>
           </ul>

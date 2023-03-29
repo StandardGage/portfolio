@@ -5,7 +5,7 @@ import { education } from "../portfolio";
 
 export default function Education() {
     return (
-        <Section title="My Education...">
+        <Section id="education" title="My Education...">
             <ol className="flex flex-row flex-wrap gap-10 justify-center">
                 {education.schools.map((school, i) => {
                     return (
@@ -29,7 +29,6 @@ export default function Education() {
                             </>
                         }
                         >
-
                         </Card>
                     )
                 })}

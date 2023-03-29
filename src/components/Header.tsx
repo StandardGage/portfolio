@@ -37,7 +37,7 @@ function useScrollDirection() {
       lastScrollY = scrollY;
     };
 
-    const throttledUpdateScrollDirection = throttle(updateScrollDirection, 50); // Adjust the throttle duration as needed
+    const throttledUpdateScrollDirection = throttle(updateScrollDirection, 25); // Adjust the throttle duration as needed
 
     window.addEventListener("scroll", throttledUpdateScrollDirection);
     return () => {
