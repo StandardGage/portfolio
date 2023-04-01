@@ -4,7 +4,7 @@ export default function Header({ children }) {
   const scrollDirection = useScrollDirection();
   return (
     <div
-      className={`bg-transparent -mx-[8.6%] sticky z-40 -my-8 box-border ${
+      className={`bg-transparent max-w-full overflow-visible sticky z-40 -my-8 ${
         scrollDirection === "down"
           ? "-top-24"
           : scrollDirection === "up"
@@ -26,7 +26,6 @@ function useScrollDirection() {
     const updateScrollDirection = () => {
       const scrollY = window.pageYOffset;
       const direction = scrollY > lastScrollY ? "down" : scrollY === lastScrollY ? "neutral" : "up";
-      console.log(scrollY)
       if (direction !== scrollDirection && scrollY !== 0) {
         setScrollDirection(direction);
       }

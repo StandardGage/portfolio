@@ -34,7 +34,7 @@ const back = {
 export default function Card(props:any) {
 
     return(
-        <motion.div style={{transformStyle: "preserve-3d"}} initial="rest" whileHover="hover" className='min-w-[312px] max-w-[312px] min-h-[312px] max-h-[312px] relative flex justify-center'>
+        <motion.div animate={{scale:0}} whileInView={{scale:1}} style={{transformStyle: "preserve-3d"}} initial="rest" whileHover="hover" className='min-w-[312px] max-w-[312px] min-h-[312px] max-h-[312px] relative flex justify-center'>
             <motion.div
             variants={front}
             transition={{duration:.6}}

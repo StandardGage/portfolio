@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Section(props: { id: string; title: string; children: any; }) {
     return (
-        <div id={props.id} className="mx-20 p-5">
+        <div id={props.id} className="">
             <motion.div
                 initial={{x:-100}}
                 animate={{x:0}}

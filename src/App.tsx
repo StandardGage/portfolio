@@ -26,22 +26,26 @@ function App() {
     <div className="App space-y-10">
       <Header>
         <div>
-          <ul className='flex-1 flex-nowrap space-x-2 text-center'>
-            <div className='text-center font-proza text-5xl float-left cursor-default'>GS</div>
+          <ul className='px-25 m-auto max-w-[1264px] flex justify-between space-x-2 text-center'>
+            <div className=' max-w-sm text-center font-proza text-5xl cursor-default'>GS</div>
+            <div className='flex-1'>
             <Navigator><a href='#skills'>Skills</a></Navigator>
             <Navigator><a href='#projects'>Projects</a></Navigator>
             <Navigator><a href='#education'>Education</a></Navigator>
             <Navigator><a href='#experience'>Experience</a></Navigator>
             <Navigator><a href='#contact'>Contact</a></Navigator>
-            <ThemeToggle className='float-right'></ThemeToggle>
+            </div>
+            <ThemeToggle className=''></ThemeToggle>
           </ul>
         </div>
       </Header>
+      <div className='p-20 m-auto max-w-[1264px] space-y-10'>
       <Greeting></Greeting>
       <Skills></Skills>
       <Projects></Projects>
       <Education></Education>
       <Experience></Experience>
+      </div>
     </div>
   )
 }
