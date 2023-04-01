@@ -30,7 +30,7 @@ export default function Projects() {
     return (
         <Section id="projects" title="My Projects...">
             <ol className="flex flex-row flex-wrap gap-10 justify-center">
-            <Carousel>
+            
             {projects.projects.map((project, i) => {
                 return (
                     <Card
@@ -65,7 +65,7 @@ export default function Projects() {
                     </Card>
                 )
             })}
-            </Carousel>
+            
             </ol>
         </Section>
     )

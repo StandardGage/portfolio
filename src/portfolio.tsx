@@ -105,24 +105,15 @@ const projects = {
             partners: "Personal Project",
             mainImage: house,
             video: [],
-            link: "",
-            description: "",
+            link: "https://www.artstation.com/artwork/al1n9",
+            description: "Rendering to learn and experiment with materials, as well as foliage.",
             images: [house, lantern, table, wood],
             skills: [skills.skills.Blender, skills.skills.Photoshop]
 
         },
         {
-            title: "My Portfolio",
-            partners: "Personal Project",
-            mainImage: [],
-            video: [],
-            description: "",
-            images: [],
-            skills: []
-        },
-        {
             title: "Hawaiian Cleanup",
-            partners: "Gage Schuster, Grace Melton, Premanshu Patel, Sydney Segear, Jesse Wallace",
+            partners: "Game Development Project",
             mainImage: game,
             video: [],
             link: "https://github.com/StandardGage/HawaiianCleanup",
@@ -132,7 +123,7 @@ const projects = {
         },
         {
             title: "TEMNet",
-            partners: "Juan S. Rey, Gage Schuster, Hagan Beatson, Christian Lantz, Alex Bryer, Juan Perilla",
+            partners: "Part of Research for Perilla Lab",
             mainImage: temnet,
             video: [],
             link: "https://github.com/Perilla-lab/TEMNet",

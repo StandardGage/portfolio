@@ -34,7 +34,7 @@ const back = {
 export default function Card(props:any) {
 
     return(
-        <motion.div animate={{scale:0}} whileInView={{scale:1}} style={{transformStyle: "preserve-3d"}} initial="rest" whileHover="hover" className='min-w-[312px] max-w-[312px] min-h-[312px] max-h-[312px] relative flex justify-center'>
+        <motion.div initial="rest" animate={{scale:[0,1]}} style={{transformStyle: "preserve-3d"}} whileHover="hover" className='min-w-[312px] max-w-[312px] min-h-[312px] max-h-[312px] relative flex justify-center'>
             <motion.div
             variants={front}
             transition={{duration:.6}}
@@ -45,7 +45,7 @@ export default function Card(props:any) {
             <motion.div
             variants={back}
             transition={{duration:.6}}
-            className="absolute bg-inherit backdrop-brightness-95 dark:bg-[#37373a] rounded-xl shadow-md min-w-[312px] max-w-[312px] min-h-[312px] max-h-[312px]">
+            className="overflow-y-scroll overflow-x-clip absolute bg-inherit backdrop-brightness-95 dark:bg-[#37373a] rounded-xl shadow-md min-w-[312px] max-w-[312px] min-h-[312px] max-h-[312px]">
                 {props.back}
             </motion.div>
         </motion.div>

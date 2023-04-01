@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Card from "../components/Card";
+import Collapsible from "../components/Collapsible";
 import Section from "../components/Section";
 import { education } from "../portfolio";
 
@@ -20,12 +21,9 @@ export default function Education() {
                         }
                         back = {
                             <>
-                            <div className="font-proza">Classes</div>
-                            <div className="font-telex whitespace-pre">{school.classes.join('\n')}</div>
-                            <div className="font-proza">Clubs/Activites</div>
-                            <div className="font-telex whitespace-pre">{school.clubs.join('\n')}</div>
-                            <div className="font-proza">Awards</div>
-                            <div className="font-telex whitespace-pre">{school.awards.join('\n')}</div>
+                            <Collapsible label={"Classes"}><div className="font-telex whitespace-pre">{school.classes.join('\n')}</div></Collapsible>
+                            <Collapsible label={"Clubs/Activities"}><div className="font-telex whitespace-pre">{school.clubs.join('\n')}</div></Collapsible>
+                            <Collapsible label={"Awards"}><div className="font-telex whitespace-pre">{school.awards.join('\n')}</div></Collapsible>
                             </>
                         }
                         >

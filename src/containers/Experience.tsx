@@ -7,7 +7,7 @@ import { experience } from "../portfolio";
 export default function Experience() {
     return (
         <Section id="experience" title="My Experience...">
-            <Carousel>
+            <ol className="flex flex-row flex-wrap gap-10 justify-center">
                 {experience.jobs.map((job, i) => (
                     <Card
                         image = {job.image}
@@ -23,7 +23,7 @@ export default function Experience() {
                         }
                     ></Card>
                 ))}
-            </Carousel>
+            </ol>
         </Section>
     )
 }
