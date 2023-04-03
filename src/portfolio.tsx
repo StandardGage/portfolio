@@ -141,7 +141,6 @@ const education = {
             title: "Honors Student",
             date: "(August 2017 - May 2021)",
             image: salesianum,
-            grade: "",
             classes: ["Intro to Python", "A.P. Computer Science - 5/5", "Game Dev Independent Study", "Networking Independent Study"],
             clubs: ["Computer Science Club - President", "National Honor Society", "Science Olympiad", "Track"],
             awards: ["Bebras Computing Challenge", "Silver for Computer Science"]
@@ -151,10 +150,12 @@ const education = {
             title: "Honors Computer Science",
             date: "(August 2021 - May 2025)",
             image: udel,
-            grade: "3.34",
-            classes: [],
-            clubs: ["Alpha Gamma Rho - Chief Financial Officer"],
-            awards: []
+            classes: ["Intro to Comp Sci I","Intro to Comp Sci II", "Intro to Systems Programming","Data Structures",
+                    "Machine Organization & Assembly","Computers, Ethics, and Society","Learning Game Development",
+                    "Intro to Software Engineering","Automata Theory","Logic for Programming","Intro to Algorithms",
+                    "Calculus I","Calculus II","Discrete Mathematics" ],
+            clubs: ["Alpha Gamma Rho - Finance Chair", "Spikeball Club", "Chess Club"],
+            awards: ["Honors Program", "Grand Scholars Program"]
         }
     ]
 }
