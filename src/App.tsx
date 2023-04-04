@@ -30,7 +30,7 @@ function App() {
         <div>
           <ul className='px-25 m-auto max-w-[1264px] flex justify-between space-x-2 text-center'>
             <div className=' max-w-sm text-center font-proza text-5xl cursor-default'>GS</div>
-            <div className='flex-1 lg:block md:hidden'>
+            <div className='flex-1 lg:block md:hidden sm:hidden'>
             <Navigator><a href='#skills'>Skills</a></Navigator>
             <Navigator><a href='#projects'>Projects</a></Navigator>
             <Navigator><a href='#education'>Education</a></Navigator>
@@ -44,7 +44,7 @@ function App() {
           </ul>
         </div>
       </Header>
-      <div className='p-20 m-auto max-w-[1264px] space-y-10'>
+      <div className='p-20 m-auto max-w-[1264px] space-y-10 sm:p-2'>
       <Greeting></Greeting>
       <Skills></Skills>
       <Projects></Projects>

@@ -16,7 +16,7 @@ export default function Carousel(props: { children: any[]; }) {
             else {
                 setIndex(index-1)
             }
-        }} className={`flex rotate-180 cursor-pointer h-52 ${items.length < 2 ? 'hidden' : ''}`}></AiOutlineRight></motion.div>
+        }} className={`flex rotate-180 cursor-pointer sm:h-24 h-52 ${items.length < 2 ? 'hidden' : ''}`}></AiOutlineRight></motion.div>
         {items.map((item, i) => (
             <motion.div animate={{scale:0}} whileInView={{scale:1}} className={`${(i == index) ? "block" : "hidden"} flex items-center justify-center `}>{items[i]}</motion.div>
         ))}
@@ -28,7 +28,7 @@ export default function Carousel(props: { children: any[]; }) {
                 setIndex(index + 1)
             }
             
-            }} className={`cursor-pointer h-52 ${items.length < 2 ? 'hidden' : ''}`}></AiOutlineRight></motion.div>
+            }} className={`cursor-pointer sm:h-24 h-52 ${items.length < 2 ? 'hidden' : ''}`}></AiOutlineRight></motion.div>
         </div>
     )
 }

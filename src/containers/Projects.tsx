@@ -43,7 +43,7 @@ export default function Projects() {
                         </div>
                     }
                     back={
-                        <div className="flex flex-col justify-center shadow-md rounded-md min-w-[312px] max-w-[312px] min-h-[312px] max-h-[312px]">
+                        <div className="flex flex-col justify-center shadow-md rounded-md">
                             <div className="font-proza">{project.title}</div>
                             <div className="font-telex">{project.partners}</div>
                             {/* <iframe className="rounded-md shadow-md" width="250" height="150" src={project.video} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
