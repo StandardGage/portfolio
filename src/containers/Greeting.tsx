@@ -4,12 +4,12 @@ import Socials from "../components/Socials";
 export default function Greeting() {
     return (
         <div>
-        <div className="flex justify-between sm:">
+        <div className="flex justify-between">
             <motion.div className="flex-col flex my-20 items-start"
                 initial={{x: -200}}
                 animate={{x: 0}}>
                 <div className="font-proza sm:text-5xl text-8xl text-left :">Hey,</div>
-                <div className="font-proza text-5xl text-left whitespace-nowrap">I'm Gage</div>
+                <div className="font-proza sm:text-5xl text-8xl text-left whitespace-nowrap">I'm Gage</div>
             </motion.div>
             <motion.div className="group font-telex sm:text-sm text-2xl self-end justify-self-end whitespace-nowrap"
                 initial={{opacity:0}}
