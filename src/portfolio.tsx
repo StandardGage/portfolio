@@ -70,24 +70,24 @@ const skills = {
 const projects = {
     projects: [
         {
-            title: "Robot's Road",
-            partners: "Personal Project",
-            mainImage: robot,
-            video: ["https://www.youtube-nocookie.com/embed/LnPcdFlZFAo?controls=1"],
-            link: "https://www.artstation.com/artwork/14LPmZ",
-            description: "Animated short for experimenting with different environments and physics",
-            images: [robot],
-            skills: [skills.skills.Blender, skills.skills.Photoshop]
+            title: "TEMNet",
+            partners: "Part of Research for Perilla Lab",
+            mainImage: temnet,
+            video: [],
+            link: "https://github.com/Perilla-lab/TEMNet",
+            description: "",
+            images: [temnet],
+            skills: [skills.skills['C/C++'], skills.skills.Docker, skills.skills.Python, skills.skills.Github, skills.skills.Linux]
         },
         {
-            title: "Scientific Journal Candidates",
-            partners: "Part of Research for Perilla Lab",
-            mainImage: virus,
+            title: "Hawaiian Cleanup",
+            partners: "Game Development Project",
+            mainImage: game,
             video: [],
-            link: "https://www.artstation.com/artwork/14vlqo",
-            description: "Candidates for Scientific Journal Cover",
-            images: [virus, virus2, virus3],
-            skills: [skills.skills.Blender]
+            link: "https://github.com/StandardGage/HawaiianCleanup",
+            description: "Game to educate children in Computer Science",
+            images: [game],
+            skills: [skills.skills.Typescript, skills.skills.CSS, skills.skills.HTML]
         },
         {
             title: "Capsid Visualizations",
@@ -101,6 +101,26 @@ const projects = {
             
         },
         {
+            title: "Scientific Journal Candidates",
+            partners: "Part of Research for Perilla Lab",
+            mainImage: virus,
+            video: [],
+            link: "https://www.artstation.com/artwork/14vlqo",
+            description: "Candidates for Scientific Journal Cover",
+            images: [virus, virus2, virus3],
+            skills: [skills.skills.Blender]
+        },
+        {
+            title: "Robot's Road",
+            partners: "Personal Project",
+            mainImage: robot,
+            video: ["https://www.youtube-nocookie.com/embed/LnPcdFlZFAo?controls=1"],
+            link: "https://www.artstation.com/artwork/14LPmZ",
+            description: "Animated short for experimenting with different environments and physics",
+            images: [robot],
+            skills: [skills.skills.Blender, skills.skills.Photoshop]
+        },
+        {
             title: "House in the Woods",
             partners: "Personal Project",
             mainImage: house,
@@ -111,26 +131,6 @@ const projects = {
             skills: [skills.skills.Blender, skills.skills.Photoshop]
 
         },
-        {
-            title: "Hawaiian Cleanup",
-            partners: "Game Development Project",
-            mainImage: game,
-            video: [],
-            link: "https://github.com/StandardGage/HawaiianCleanup",
-            description: "Game to educate children in Computer Science",
-            images: [game],
-            skills: [skills.skills.Typescript, skills.skills.CSS, skills.skills.HTML]
-        },
-        {
-            title: "TEMNet",
-            partners: "Part of Research for Perilla Lab",
-            mainImage: temnet,
-            video: [],
-            link: "https://github.com/Perilla-lab/TEMNet",
-            description: "",
-            images: [temnet],
-            skills: [skills.skills['C/C++'], skills.skills.Docker, skills.skills.Python, skills.skills.Github, skills.skills.Linux]
-        }
     ]
 }
 
