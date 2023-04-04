@@ -167,30 +167,49 @@ const experience = {
             company: "University of Delaware",
             duration: "(February 2023 - Present)",
             image: smith,
+            description: "",
+            responsibilities: ["Helping students with homework", "Grading assignments", "Helping students with projects", "Holding office hours"],
+            achievements: [],
+            skills: [skills.skills['C/C++'], skills.skills.Python, skills.skills.Linux, skills.skills.Github]
         },
         {
             role: "Chief Financial Officer",
             company: "Alpha Gamma Rho - Beta Upsilon",
             duration: "(January 2023 - Present)",
             image: agr,
+            description: "",
+            responsibilities: ["Managing the budget", "Managing the bank account", "Managing the treasury"],
+            achievements: [],
         },
         {
             role: "Lab Assistant",
             company: "University of Delaware",
             duration: "(September 2022 - December 2022)",
             image: udel,
+            description: "",
+            responsibilities: ["Helping students with homework", "Grading assignments", "Helping students with projects"],
+            achievements: [],
+            skills: [skills.skills['C/C++'], skills.skills.Python, skills.skills.Linux, skills.skills.Github]
         },
         {
             role: "Undergraduate Researcher",
             company: "University of Delaware",
             duration: "(May 2022 - September 2022",
-            image: brown
+            image: brown,
+            description: "",
+            responsibilities: [],
+            achievements: [],
+            skills: [skills.skills['C/C++'], skills.skills.Python, skills.skills.Linux, skills.skills.Github, skills.skills.Docker, skills.skills.Blender]
         },
         {
             role: "Senior Information Technology Intern",
             company: "Salesianum High School",
             duration: "(May 2021 - September 2022",
-            image: salesianum
+            image: salesianum,
+            description: "",
+            responsibilities: ["Maintaining the school's network", "Maintaining the school's servers", "Maintaining the school's computers"],
+            achievements: [],
+            skills: [skills.skills.Windows, skills.skills.Linux, skills.skills.Github, skills.skills.Python, skills.skills['C/C++']]
         }
 
     ]

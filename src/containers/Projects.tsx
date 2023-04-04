@@ -29,7 +29,7 @@ function getMedia(project: { images: string[]; video: string[]; }) {
 export default function Projects() {
     return (
         <Section id="projects" title="My Projects...">
-            <ol className="flex flex-row flex-wrap gap-10 justify-center">
+            <ol className="flex flex-wrap gap-10 justify-center">
             
             {projects.projects.map((project, i) => {
                 return (
@@ -43,15 +43,15 @@ export default function Projects() {
                         </div>
                     }
                     back={
-                        <div className="flex flex-col justify-center shadow-md rounded-md min-w-[312px] max-w-[312px] min-h-[312px] max-h-[312px]">
+                        <div>
                             <div className="font-proza">{project.title}</div>
                             <div className="font-telex">{project.partners}</div>
                             {/* <iframe className="rounded-md shadow-md" width="250" height="150" src={project.video} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
                             <Carousel>
                                 {getMedia(project)}
                             </Carousel>
-                            <a className="underline font-taviraj" target="_blank" href={project.link}>View Project</a>
-                            <div className="flex justify-center space-x-4 my-2">
+                            <a className="underline font-taviraj self-end" target="_blank" href={project.link}>View Project</a>
+                            <div className="flex self-end justify-center space-x-4 my-2">
                             {project.skills.map((skill,i) => {
                                 return (
                                     <div className="scale-150">

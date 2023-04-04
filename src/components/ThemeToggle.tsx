@@ -4,7 +4,7 @@ import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md'
 
 export default function ThemeToggle(props:any) {
     return (
-        <motion.button 
+        <motion.button
         initial={{scale:1.5}}
         whileHover={{scale:2}}
         whileTap={{scale:1}}
