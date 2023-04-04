@@ -168,7 +168,7 @@ const experience = {
             duration: "(February 2023 - Present)",
             image: smith,
             description: "",
-            responsibilities: ["Helping students with homework", "Grading assignments", "Helping students with projects"],
+            responsibilities: ["Helping students with homework", "Grading assignments", "Helping students with projects", "Holding office hours"],
             achievements: [],
             skills: [skills.skills['C/C++'], skills.skills.Python, skills.skills.Linux, skills.skills.Github]
         },
