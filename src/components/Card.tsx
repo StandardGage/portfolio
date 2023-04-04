@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 const variants = {
     unflipped: { rotateY: 0},
@@ -34,12 +33,12 @@ const back = {
 export default function Card(props:any) {
 
     return(
-        <motion.div initial="rest" animate={{scale:[0,1]}} style={{transformStyle: "preserve-3d"}} whileHover="hover" className='min-w-[312px] max-w-[312px] min-h-[312px] max-h-[312px] relative flex justify-center'>
+        <motion.div initial="rest" animate={{scale:[0,1]}} style={{transformStyle: "preserve-3d"}} whileHover="hover" className=' min-w-[312px] max-w-[312px] min-h-[312px] max-h-[312px] relative flex justify-center'>
             <motion.div
             variants={front}
             transition={{duration:.6}}
             style={{backgroundImage: `url(${props.image})`, backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', }}
-            className="absolute dark:text-black dark:bg-[#37373a] rounded-xl shadow-md min-w-[312px] max-w-[312px] max-h-[312px] min-h-[312px]">
+            className="shadow-md absolute dark:text-black dark:bg-[#37373a] rounded-xl min-w-[312px] max-w-[312px] max-h-[312px] min-h-[312px]">
                 <div className="p-1 rounded-t-xl backdrop-blur-xl ">{props.front}</div>
             </motion.div>
             <motion.div

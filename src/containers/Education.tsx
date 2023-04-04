@@ -21,9 +21,9 @@ export default function Education() {
                         }
                         back = {
                             <>
-                            <Collapsible label={"Classes"}><div className="font-telex whitespace-pre">{school.classes.join('\n')}</div></Collapsible>
-                            <Collapsible label={"Clubs/Activities"}><div className="font-telex whitespace-pre">{school.clubs.join('\n')}</div></Collapsible>
-                            <Collapsible label={"Awards"}><div className="font-telex whitespace-pre">{school.awards.join('\n')}</div></Collapsible>
+                            <Collapsible label={"Classes"}><div className="mx-9 text-sm text-left font-telex whitespace-pre">{'• '+school.classes.join('\n• ')}</div></Collapsible>
+                            <Collapsible label={"Clubs/Activities"}><div className="mx-9 text-sm text-left font-telex whitespace-pre">{'• '+school.clubs.join('\n• ')}</div></Collapsible>
+                            <Collapsible label={"Awards"}><div className="mx-9 text-sm text-left font-telex whitespace-pre">{'• '+school.awards.join('\n• ')}</div></Collapsible>
                             </>
                         }
                         >

@@ -36,14 +36,14 @@ export default function Projects() {
                     <Card
                     image = {project.mainImage}
                     front={
-                        <div className={"flex flex-col items-center"}>
+                        <div>
                             <div className="font-proza ">{project.title}</div>
                             <div className="font-telex">{project.partners}</div>
                             <div className="font-taviraj">{project.description}</div>
                         </div>
                     }
                     back={
-                        <div className="shadow-md rounded-md min-w-[312px] max-w-[312px] min-h-[312px] max-h-[312px] flex flex-col justify-center items-center">
+                        <div className="flex flex-col justify-center shadow-md rounded-md min-w-[312px] max-w-[312px] min-h-[312px] max-h-[312px]">
                             <div className="font-proza">{project.title}</div>
                             <div className="font-telex">{project.partners}</div>
                             {/* <iframe className="rounded-md shadow-md" width="250" height="150" src={project.video} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
@@ -51,7 +51,7 @@ export default function Projects() {
                                 {getMedia(project)}
                             </Carousel>
                             <a className="underline font-taviraj" target="_blank" href={project.link}>View Project</a>
-                            <div className="flex space-x-4 my-2">
+                            <div className="flex justify-center space-x-4 my-2">
                             {project.skills.map((skill,i) => {
                                 return (
                                     <div className="scale-150">
