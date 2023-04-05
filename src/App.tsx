@@ -23,16 +23,15 @@ function Navigator(props: any) {
   )
 }
 
-
 function App() {
-  const [mobileMenu, setMobileMenu] = useState(true);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
     <div className="App space-y-10">
       <Header>
         <div>
           <ul className='px-25 m-auto max-w-[1264px] flex justify-between space-x-2 text-center'>
-            <div className=' max-w-sm text-center font-proza text-5xl cursor-default'>GS</div>
+            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} className=' max-w-sm text-center font-proza text-5xl cursor-default'>GS</motion.div>
             <div className='flex-1 lg:block md:hidden sm:hidden'>
             <Navigator><a href='#skills'>Skills</a></Navigator>
             <Navigator><a href='#projects'>Projects</a></Navigator>
@@ -42,7 +41,7 @@ function App() {
             </div>
             <div className='flex'>
             <ThemeToggle></ThemeToggle>
-            <motion.div onClick={()=> setMobileMenu(!mobileMenu)} initial={{scale:1.5}} whileTap={{scale:1}} whileHover={{scale:2}} className='ml-5 self-center lg:hidden md:block cursor-pointer'>{!mobileMenu && <AiOutlineMenu></AiOutlineMenu>}{mobileMenu && <AiOutlineClose></AiOutlineClose>}</motion.div>
+            <motion.div onClick={()=> setMobileMenu(!mobileMenu)} initial={{opacity: 0, scale:1.5}} whileInView={{opacity:1}} whileTap={{scale:1}} whileHover={{scale:2}} className='ml-5 self-center lg:hidden md:block cursor-pointer'>{!mobileMenu && <AiOutlineMenu></AiOutlineMenu>}{mobileMenu && <AiOutlineClose></AiOutlineClose>}</motion.div>
             </div>
           </ul>
         </div>

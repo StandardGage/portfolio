@@ -5,9 +5,10 @@ import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md'
 export default function ThemeToggle(props:any) {
     return (
         <motion.button
-        initial={{scale:1.5}}
+        initial={{scale:1.5, opacity:0}}
         whileHover={{scale:2}}
         whileTap={{scale:1}}
+        whileInView={{opacity:1}}
         onClick={() => {
             var theme = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
             if (theme === 'light') {
