@@ -6,7 +6,7 @@ export default function Header({ children }) {
     <div
       className={`bg-transparent max-w-full overflow-visible sticky z-40 -my-8 ${
         scrollDirection === "down"
-          ? "-top-24"
+          ? "lg:-top-24 sm:top-0 sm:dark:bg-neutral-900 sm:bg-white"
           : scrollDirection === "up"
           ? "top-0 dark:bg-neutral-900 bg-white"
           : "bg-transparent top-0"

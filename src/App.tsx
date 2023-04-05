@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import './App.css'
 import Greeting from './containers/Greeting'
 import Header from './components/Header'
@@ -8,7 +8,7 @@ import Projects from './containers/Projects'
 import Education from './containers/Education'
 import Experience from './containers/Experience'
 
-import { AiOutlineMenu } from 'react-icons/ai'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useState } from 'react'
 
 function Navigator(props: any) {
@@ -25,7 +25,7 @@ function Navigator(props: any) {
 
 
 function App() {
-  const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(true);
 
   return (
     <div className="App space-y-10">
@@ -42,11 +42,18 @@ function App() {
             </div>
             <div className='flex'>
             <ThemeToggle></ThemeToggle>
-            <motion.div onClick={()=> } initial={{scale:1.5}} whileHover={{scale:2}} className='m-5 self-center lg:hidden md:block'><AiOutlineMenu></AiOutlineMenu></motion.div>
+            <motion.div onClick={()=> setMobileMenu(!mobileMenu)} initial={{scale:1.5}} whileTap={{scale:1}} whileHover={{scale:2}} className='ml-5 self-center lg:hidden md:block cursor-pointer'>{!mobileMenu && <AiOutlineMenu></AiOutlineMenu>}{mobileMenu && <AiOutlineClose></AiOutlineClose>}</motion.div>
             </div>
           </ul>
         </div>
       </Header>
+      {mobileMenu && <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={()=>setMobileMenu(false)} className='p-5 mt-80 z-20 fixed w-full h-full justify-start items-center flex flex-col backdrop-blur-md'>
+            <Navigator><a href='#skills'>Skills</a></Navigator>
+            <Navigator><a href='#projects'>Projects</a></Navigator>
+            <Navigator><a href='#education'>Education</a></Navigator>
+            <Navigator><a href='#experience'>Experience</a></Navigator>
+            <Navigator><a href='#contact'>Contact</a></Navigator>
+      </motion.div>}
       <div className='p-20 m-auto max-w-[1264px] space-y-10 sm:p-2'>
       <Greeting></Greeting>
       <Skills></Skills>
