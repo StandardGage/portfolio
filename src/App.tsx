@@ -9,6 +9,7 @@ import Education from './containers/Education'
 import Experience from './containers/Experience'
 
 import { AiOutlineMenu } from 'react-icons/ai'
+import { useState } from 'react'
 
 function Navigator(props: any) {
   return (
@@ -24,6 +25,8 @@ function Navigator(props: any) {
 
 
 function App() {
+  const [mobileMenu, setMobileMenu] = useState(false);
+
   return (
     <div className="App space-y-10">
       <Header>
@@ -39,7 +42,7 @@ function App() {
             </div>
             <div className='flex'>
             <ThemeToggle></ThemeToggle>
-            <motion.div initial={{scale:1.5}} whileHover={{scale:2}} className='m-5 self-center lg:hidden md:block'><AiOutlineMenu></AiOutlineMenu></motion.div>
+            <motion.div onClick={()=> } initial={{scale:1.5}} whileHover={{scale:2}} className='m-5 self-center lg:hidden md:block'><AiOutlineMenu></AiOutlineMenu></motion.div>
             </div>
           </ul>
         </div>

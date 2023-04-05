@@ -18,7 +18,7 @@ export default function Carousel(props: { children: any[]; }) {
             }
         }} className={`flex rotate-180 cursor-pointer sm:h-24 h-52 ${items.length < 2 ? 'invisible' : ''}`}></AiOutlineRight></motion.div>
         {items.map((item, i) => (
-            <motion.div animate={{scale:0}} whileInView={{scale:1}} className={`${(i == index) ? "block" : "hidden"} flex items-center justify-center `}>{items[i]}</motion.div>
+            <motion.div key={i} animate={{scale:0}} whileInView={{scale:1}} className={`${(i == index) ? "block" : "hidden"} flex items-center justify-center `}>{items[i]}</motion.div>
         ))}
         <motion.div whileHover={{x:[0,5,0], transition:{repeat:Infinity}}}><AiOutlineRight onClick={()=>{
             console.log(index)

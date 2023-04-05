@@ -11,6 +11,7 @@ export default function Education() {
                 {education.schools.map((school, i) => {
                     return (
                         <Card
+                        key = {i}
                         image = {school.image}
                         front= {
                             <>

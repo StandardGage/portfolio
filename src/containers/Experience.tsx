@@ -10,6 +10,7 @@ export default function Experience() {
             <ol className="flex flex-row flex-wrap gap-10 justify-center">
                 {experience.jobs.map((job, i) => (
                     <Card
+                        key = {i}
                         image = {job.image}
                         front={
                             <div>
@@ -22,7 +23,7 @@ export default function Experience() {
                             <div>
                                 <div className="m-4 flex justify-center">
                                 {job.skills?.map((skill, i) => (
-                                    <div className={`scale-150 p-2 ${skill}`}></div>
+                                    <div key={i} className={`scale-150 p-2 ${skill}`}></div>
                                 ))}
                                 </div>
                                 <Collapsible label={"Summary"}>{job.description}</Collapsible>

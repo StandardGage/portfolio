@@ -7,24 +7,24 @@ const variants = {
 
 const front = {
     rest: {
-        'backface-visibility': 'hidden',
-        'z-index':10,
+        backfaceVisibility: 'hidden',
+        zIndex:10,
     },
     hover: {
-        'backface-visibility': 'hidden',
-        'z-index': 0,
+        backfaceVisibility: 'hidden',
+        zIndex: 0,
         rotateY: 180,
     }
 }
 
 const back = {
     rest: {
-        'z-index':0,
+        zIndex:0,
         rotateY: -180,
-        'backface-visibility': 'hidden'
+        backfaceVisibility: 'hidden'
     },
     hover: {
-        'z-index':10,
+        zIndex:10,
         rotateY: 0,
     }
 }

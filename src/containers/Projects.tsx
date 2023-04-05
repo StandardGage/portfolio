@@ -9,7 +9,7 @@ import Section from "../components/Section";
 function getMedia(project: { images: string[]; video: string[]; }) {
     const media: JSX.Element[] = [];
     project.video.map((video: string, i: Key) => media.push(
-        <iframe allowFullScreen className="rounded-md shadow-md w-48" src={video}></iframe>
+        <iframe key={i} allowFullScreen className="rounded-md shadow-md w-48" src={video}></iframe>
     ))
     project.images.map((image: string, i: Key) => media.push(
         <motion.img
@@ -34,6 +34,7 @@ export default function Projects() {
             {projects.projects.map((project, i) => {
                 return (
                     <Card
+                    key = {i}
                     image = {project.mainImage}
                     front={
                         <div>
@@ -46,7 +47,6 @@ export default function Projects() {
                         <div>
                             <div className="font-proza">{project.title}</div>
                             <div className="font-telex">{project.partners}</div>
-                            {/* <iframe className="rounded-md shadow-md" width="250" height="150" src={project.video} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
                             <Carousel>
                                 {getMedia(project)}
                             </Carousel>
@@ -54,7 +54,7 @@ export default function Projects() {
                             <div className="flex self-end justify-center space-x-4 my-2">
                             {project.skills.map((skill,i) => {
                                 return (
-                                    <div className="scale-150">
+                                    <div key={i} className="scale-150">
                                     <div className={skill}></div>
                                     </div>
                                 )
