@@ -64,12 +64,12 @@ import { Variant, Variants, motion } from "framer-motion";
 import { useState } from "react";
 
 const front:Variants = {
-  rest: { rotateY: 0, backfaceVisibility: "hidden" },
-  flipped: { rotateY: 180, backfaceVisibility: "hidden" },
+  rest: { rotateY: 0 },
+  flipped: { rotateY: 180},
 };
 
 const back:Variants = {
-  rest: { rotateY: -180, backfaceVisibility: "hidden" },
+  rest: { rotateY: -180 },
   flipped: { rotateY: 0 },
 };
 
@@ -95,12 +95,13 @@ export default function Card(props: any) {
         transition={{ duration: 0.6 }}
         style={{
           transformStyle: "preserve-3d",
+          backfaceVisibility: "hidden",
           backgroundImage: `url(${props.image})`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
         }}
-        className="shadow-md absolute dark:text-black dark:bg-[#37373a] rounded-xl min-w-full min-h-full"
+        className="shadow-md absolute dark:text-black rounded-xl min-w-full min-h-full"
       >
         <div className="p-1 rounded-t-xl backdrop-blur-xl ">{props.front}</div>
       </motion.div>
@@ -109,7 +110,7 @@ export default function Card(props: any) {
         initial="rest"
         variants={back}
         transition={{ duration: 0.6 }}
-        style={{ transformStyle: "preserve-3d" }}
+        style={{ transformStyle: "preserve-3d", backfaceVisibility: "hidden" }}
         className="overflow-y-scroll overflow-x-clip absolute bg-inherit backdrop-brightness-95 dark:bg-[#37373a] rounded-xl shadow-md min-w-full min-h-full max-h-[314px]"
       >
         {props.back}
