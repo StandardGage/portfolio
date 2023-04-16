@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        localStorage.setItem('theme','dark')
+    } else {
+        localStorage.setItem('theme', 'light')
+    }
+    var theme = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light'
+    document.documentElement.classList.add(theme)
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="icon" type="image/svg+xml" href="/portfolio/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gage Schuster's Portfolio</title>
+    <script type="module" crossorigin src="/portfolio/assets/index-f379594a.js"></script>
+    <link rel="stylesheet" href="/portfolio/assets/index-43d68874.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>
