@@ -10,6 +10,7 @@ import Experience from './containers/Experience'
 
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useState } from 'react'
+import Contact from './containers/Contact'
 
 function Navigator(props: any) {
   return (
@@ -25,6 +26,7 @@ function Navigator(props: any) {
 
 function App() {
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [contact, setContact] = useState(false);
 
   return (
     <div className="App space-y-10">
@@ -37,7 +39,7 @@ function App() {
             <Navigator><a href='#projects'>Projects</a></Navigator>
             <Navigator><a href='#education'>Education</a></Navigator>
             <Navigator><a href='#experience'>Experience</a></Navigator>
-            <Navigator><a href='#contact'>Contact</a></Navigator>
+            <Navigator><a onClick={()=>setContact(!contact)} href='#contact'>Contact</a></Navigator>
             </div>
             <div className='flex'>
             <ThemeToggle></ThemeToggle>
@@ -51,8 +53,14 @@ function App() {
             <Navigator><a href='#projects'>Projects</a></Navigator>
             <Navigator><a href='#education'>Education</a></Navigator>
             <Navigator><a href='#experience'>Experience</a></Navigator>
-            <Navigator><a href='#contact'>Contact</a></Navigator>
+            <Navigator><a onClick={()=>setContact(!contact)}>Contact</a></Navigator>
       </motion.div>}
+      <AnimatePresence>
+      {contact &&
+      <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={()=>setContact(!contact)} className="fixed flex justify-center items-center z-10 w-full h-full">
+        <Contact></Contact>
+      </motion.div>}
+      </AnimatePresence>
       <div className='p-20 m-auto max-w-[1264px] space-y-10 sm:p-2'>
       <Greeting></Greeting>
       <Skills></Skills>

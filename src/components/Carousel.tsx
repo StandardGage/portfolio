@@ -8,7 +8,7 @@ export default function Carousel(props: { children: any[]; }) {
     const items = props.children.filter((child) => child != null)
     
     return (
-        <div className="flex flex-grow justify-center items-center">
+        <div onClick={(e) => e.stopPropagation()} className="flex flex-grow justify-center items-center">
         <motion.div whileHover={{x:[0,-5,0], transition:{repeat:Infinity}}}><AiOutlineRight onClick={()=> {
             if (index == 0) {
                 setIndex(items.length-1)
