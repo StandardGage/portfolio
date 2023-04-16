@@ -2,7 +2,12 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { BiRightArrow } from 'react-icons/bi';
 
-export default function Collapsible({ label, children }) {
+interface CollapsibleProps {
+    label: string;
+    children: React.ReactNode;
+}
+
+export default function Collapsible({ label, children }: CollapsibleProps) {
     const [open, setOpen] = useState(false);
 
     return (

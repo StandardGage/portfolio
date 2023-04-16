@@ -1,6 +1,7 @@
 import Section from "../components/Section";
 import { skills } from "../portfolio";
 
+
 export default function Skills() {
     const sk = Object.keys(skills.skills)
     return (

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function Header({ children }) {
+export default function Header({ children }: any) {
   const scrollDirection = useScrollDirection();
   return (
     <div
@@ -50,13 +50,14 @@ function useScrollDirection() {
 function throttle(func: { (): void; apply?: any; }, wait: number) {
   let context, args, prevArgs: IArguments, argsChanged, result: any;
   let previous = 0;
-  return function () {
-    let now, remaining;
+  return function (e: any) {
+    let now = 0
+    let remaining = 0;
     if (wait) {
       now = Date.now();
       remaining = wait - (now - previous);
     }
-    context = this;
+    context = e;
     args = arguments;
     argsChanged = JSON.stringify(args) !== JSON.stringify(prevArgs);
     prevArgs = Object.assign({}, args);

@@ -60,15 +60,15 @@ export default function Card(props:any) {
     )
 } */
 
-import { motion } from "framer-motion";
+import { Variant, Variants, motion } from "framer-motion";
 import { useState } from "react";
 
-const front = {
+const front:Variants = {
   rest: { rotateY: 0, backfaceVisibility: "hidden" },
   flipped: { rotateY: 180, backfaceVisibility: "hidden" },
 };
 
-const back = {
+const back:Variants = {
   rest: { rotateY: -180, backfaceVisibility: "hidden" },
   flipped: { rotateY: 0 },
 };

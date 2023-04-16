@@ -40,8 +40,11 @@ const socials = {
     ]
 }
 
-const skills = {
-    title: "My Skills",
+export interface SkillsType {
+    [key: string]: string;
+};
+
+const skills: {skills: SkillsType} = {
     skills: {
         Typescript: "devicon-typescript-plain",
         React: "devicon-react-original",
@@ -57,14 +60,7 @@ const skills = {
         Github: "devicon-github-original",
         Docker: "devicon-docker-plain",
         Photoshop: "devicon-photoshop-plain",
-    },
-    regs: [
-        "Hardworking",
-        "Eager to Learn",
-        "Analytical",
-        "Team-oriented"
-        
-    ]
+    }
 }
 
 const projects = {
