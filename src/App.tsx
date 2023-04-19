@@ -29,7 +29,7 @@ function App() {
   const [contact, setContact] = useState(false);
 
   return (
-    <div className="App space-y-10">
+    <div className="App space-y-10 dark:text-white">
       <Header>
         <div>
           <ul className='px-25 m-auto max-w-[1264px] flex justify-between space-x-2 text-center'>
