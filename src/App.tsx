@@ -57,7 +57,7 @@ function App() {
       </motion.div>}
       <AnimatePresence>
       {contact &&
-      <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={()=>setContact(!contact)} className="fixed flex justify-center items-center z-10 w-full h-full">
+      <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={()=>setContact(!contact)} className="fixed flex justify-center items-center z-20 w-full h-full">
         <Contact></Contact>
       </motion.div>}
       </AnimatePresence>
