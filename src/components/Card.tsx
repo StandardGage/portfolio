@@ -49,7 +49,7 @@ export default function Card(props: any) {
         variants={back}
         transition={{ duration: 0.6 }}
         style={{ transformStyle: "preserve-3d", backfaceVisibility: "hidden" }}
-        className="overflow-y-scroll overflow-x-clip absolute bg-inherit backdrop-brightness-95 dark:bg-[#37373a] rounded-xl shadow-md min-w-full min-h-full max-h-[314px]"
+        className="overflow-y-auto overflow-x-clip absolute bg-inherit backdrop-brightness-95 dark:bg-[#37373a] rounded-xl shadow-md min-w-full min-h-full max-h-[314px]"
       >
         {props.back}
       </motion.div>
