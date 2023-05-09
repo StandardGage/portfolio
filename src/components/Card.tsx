@@ -34,6 +34,7 @@ export default function Card(props: any) {
         style={{
           transformStyle: "preserve-3d",
           backfaceVisibility: "hidden",
+          WebkitBackfaceVisibility: "hidden",
           backgroundImage: `url(${props.image})`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
@@ -48,7 +49,7 @@ export default function Card(props: any) {
         initial="rest"
         variants={back}
         transition={{ duration: 0.6 }}
-        style={{ transformStyle: "preserve-3d", backfaceVisibility: "hidden" }}
+        style={{ transformStyle: "preserve-3d", backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden" }}
         className="overflow-y-auto overflow-x-clip absolute bg-inherit backdrop-brightness-95 dark:bg-[#37373a] rounded-xl shadow-md min-w-full min-h-full max-h-[314px]"
       >
         {props.back}
