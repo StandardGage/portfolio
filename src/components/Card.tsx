@@ -41,7 +41,7 @@ export default function Card(props: any) {
         }}
         className="shadow-md absolute dark:text-black rounded-xl min-w-full min-h-full"
       >
-        <div className="p-1 rounded-t-xl backdrop-blur-xl ">{props.front}</div>
+        <div className="p-1 rounded-t-xl backdrop-blur-xl backdrop-brightness-125 ">{props.front}</div>
       </motion.div>
       <motion.div
         animate={flipped ? "flipped" : "rest"}
