@@ -44,7 +44,7 @@ function App() {
             </div>
             <div className='flex'>
             <ThemeToggle></ThemeToggle>
-            <motion.div onClick={()=> setMobileMenu(!mobileMenu)} initial={{opacity: 0, scale:1.5}} whileInView={{opacity:1}} whileTap={{scale:1}} whileHover={{scale:2}} className='ml-5 self-center lg:hidden md:block cursor-pointer'>{!mobileMenu && <AiOutlineMenu></AiOutlineMenu>}{mobileMenu && <AiOutlineClose></AiOutlineClose>}</motion.div>
+            <motion.div onClick={()=> setMobileMenu(!mobileMenu)} initial={{opacity: 0}} whileInView={{opacity:1}} whileTap={{scale:.8}} whileHover={{scale:1.3}} className='ml-5 self-center lg:hidden md:block cursor-pointer'>{!mobileMenu && <AiOutlineMenu size={30}></AiOutlineMenu>}{mobileMenu && <AiOutlineClose size={30}></AiOutlineClose>}</motion.div>
             </div>
           </ul>
         </div>
