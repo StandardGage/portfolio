@@ -1,7 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import './App.css'
 import Greeting from './containers/Greeting'
-import Header from './components/Header'
 import ThemeToggle from './components/ThemeToggle'
 import Skills from './containers/Skills'
 import Projects from './containers/Projects'
@@ -11,6 +10,8 @@ import Experience from './containers/Experience'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { useState } from 'react'
 import Contact from './containers/Contact'
+
+import RevealHeader from 'react-revealheader'
 
 function Navigator(props: any) {
   return (
@@ -30,8 +31,8 @@ function App() {
 
   return (
     <div className="App space-y-10 dark:text-white">
-      <Header>
-        <div>
+      <RevealHeader neutralColor='sm:dark:bg-neutral-900 sm:bg-white' upColor='dark:bg-neutral-900 bg-white'>
+        <div className='p-8'>
           <ul className='px-25 m-auto max-w-[1264px] flex justify-between space-x-2 text-center'>
             <motion.div initial={{opacity:0}} whileInView={{opacity:1}} className=' max-w-sm text-center font-proza text-5xl cursor-default'>GS</motion.div>
             <div className='flex-1 lg:block md:hidden sm:hidden'>
@@ -47,7 +48,7 @@ function App() {
             </div>
           </ul>
         </div>
-      </Header>
+      </RevealHeader>
       {mobileMenu && <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={()=>setMobileMenu(false)} className='p-5 mt-80 z-20 fixed w-full h-full justify-start items-center flex flex-col backdrop-blur-md'>
             <Navigator><a href='#skills'>Skills</a></Navigator>
             <Navigator><a href='#projects'>Projects</a></Navigator>

@@ -2,13 +2,13 @@ import { Variant, Variants, motion } from "framer-motion";
 import { useState } from "react";
 
 const front:Variants = {
-  rest: { rotateY: 0, zIndex: 10 },
+  rest: { rotateY: 0, zIndex: 5 },
   flipped: { rotateY: 180, zIndex: 0},
 };
 
 const back:Variants = {
   rest: { rotateY: -180, zIndex: 0 },
-  flipped: { rotateY: 0, zIndex: 10 },
+  flipped: { rotateY: 0, zIndex: 5 },
 };
 
 export default function Card(props: any) {
