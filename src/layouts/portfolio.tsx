@@ -110,7 +110,7 @@ const projects = {
             title: "Robot's Road",
             partners: "Personal Project",
             mainImage: robot,
-            video: ["https://www.youtube-nocookie.com/embed/LnPcdFlZFAo?controls=1"],
+            video: [],
             link: "https://www.artstation.com/artwork/14LPmZ",
             description: "Animated short for experimenting with different environments and physics",
             images: [robot],

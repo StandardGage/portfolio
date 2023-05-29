@@ -7,6 +7,8 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Education from './Education';
 import Experience from './Experience';
+import 'devicon/devicon.min.css'
+import ThemeToggle from '../components/ThemeToggle';
 ---
 
 <Layout title="Gage Schuster's Portfolio">
@@ -14,7 +16,7 @@ import Experience from './Experience';
 		<RevealHeader  neutralColor='sm:dark:bg-neutral-900 sm:bg-white' upColor='dark:bg-neutral-900 bg-white' client:only>
 			<div class="p-8">
 				<ul class="px-25 m-auto max-w-[1264px] flex justify-between space-x-2 text-center">
-					<li class="max-w-sm text-center font-proza text-5xl cursor-default ">GS</li>
+					<li class="max-w-sm text-center font-proza text-5xl cursor-default hover:text-primary duration-300 "><a href="#">GS</a></li>
 					<div class="flex-1 font-proza items-center justify-center space-x-4 lg:flex md:hidden sm:hidden">
 						<li class="button hover:text-primary"><a href="#skills">Skills</a></li>
 						<li class="button hover:text-primary"><a href="#projects">Projects</a></li>
@@ -22,11 +24,12 @@ import Experience from './Experience';
 						<li class="button hover:text-primary"><a href="#experience">Experience</a></li>
 						<li class="button hover:text-primary"><a href="#contact">Contact</a></li>
 					</div>
+					<ThemeToggle client:load></ThemeToggle>
 				</ul>
 			</div>
 		</RevealHeader>
 		<div class='p-20 m-auto max-w-[1264px] space-y-10 sm:p-2'>
-			<Greeting client:idle/>
+			<Greeting client:load/>
 			<Skills client:load/>
 			<Projects client:load/>
 			<Education client:load/>

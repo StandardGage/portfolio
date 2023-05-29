@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { AiOutlineRight } from 'react-icons/ai';
+import * as Icons from 'react-icons/ai';
 
 
 export default function Carousel(props: { children: any[]; }) {
@@ -9,18 +9,18 @@ export default function Carousel(props: { children: any[]; }) {
     
     return (
         <div onClick={(e) => e.stopPropagation()} className="flex flex-grow justify-center items-center">
-        <motion.div whileHover={{x:[0,-5,0], transition:{repeat:Infinity}}}><AiOutlineRight onClick={()=> {
+        <motion.div className='hover:text-primary' whileHover={{x:[0,-5,0], transition:{repeat:Infinity}}}><Icons.AiOutlineRight onClick={()=> {
             if (index == 0) {
                 setIndex(items.length-1)
             }
             else {
                 setIndex(index-1)
             }
-        }} className={`flex rotate-180 cursor-pointer sm:h-24 h-52 ${items.length < 2 ? 'invisible' : ''}`}></AiOutlineRight></motion.div>
+        }} className={`flex rotate-180 cursor-pointer sm:h-24 h-52 ${items.length < 2 ? 'invisible' : ''}`}></Icons.AiOutlineRight></motion.div>
         {items.map((item, i) => (
             <motion.div key={i} animate={{scale:0}} whileInView={{scale:1}} className={`${(i == index) ? "block" : "hidden"} flex items-center justify-center `}>{items[i]}</motion.div>
         ))}
-        <motion.div whileHover={{x:[0,5,0], transition:{repeat:Infinity}}}><AiOutlineRight onClick={()=>{
+        <motion.div className='hover:text-primary' whileHover={{x:[0,5,0], transition:{repeat:Infinity}}}><Icons.AiOutlineRight onClick={()=>{
             console.log(index)
             if (index == items.length - 1) {
                 setIndex(0)
@@ -28,7 +28,7 @@ export default function Carousel(props: { children: any[]; }) {
                 setIndex(index + 1)
             }
             
-            }} className={`cursor-pointer sm:h-24 h-52 ${items.length < 2 ? 'invisible' : ''}`}></AiOutlineRight></motion.div>
+            }} className={`cursor-pointer sm:h-24 h-52 ${items.length < 2 ? 'invisible' : ''}`}></Icons.AiOutlineRight></motion.div>
         </div>
     )
 }

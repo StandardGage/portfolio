@@ -51,7 +51,7 @@ export default function Projects() {
                             <Carousel>
                                 {getMedia(project)}
                             </Carousel>
-                            <a className="underline font-taviraj self-end" target="_blank" href={project.link}>View Project</a>
+                            <a className="underline font-taviraj self-end hover:text-primary duration-300" target="_blank" href={project.link}>View Project</a>
                             <div className="flex self-end justify-center space-x-4 my-2">
                             {project.skills.map((skill,i) => {
                                 return (

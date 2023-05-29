@@ -9,18 +9,17 @@ export default function Greeting() {
                 initial={{x: -200}}
                 animate={{x: 0}}>
                 <div className="font-proza sm:text-5xl text-8xl text-left :">Hey,</div>
-                <div className="pb-2 font-proza sm:text-5xl text-8xl text-left whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">I'm Gage</div>
+                <div className="pb-2 font-proza sm:text-5xl text-8xl text-left whitespace-nowrap">I'm Gage</div>
             </motion.div>
             <motion.div className="group font-telex sm:text-sm text-2xl self-end justify-self-end whitespace-nowrap"
                 initial={{opacity:0}}
                 animate={{opacity:1}}
                 transition={{delay:.3}}>
                 Extras about me
-                <i className="fa fa-caret-down"></i>
-                <div className="m-2 flex flex-col whitespace-nowrap group-hover:visible font-taviraj sm:text-sm text-xl">
-                    <a>I play guitar 🎸</a>
-                    <a>I like to travel 🌴</a>
-                    <a>I like to skateboard 🛹</a>
+                <div className="m-2 pl-14 text-left flex flex-col whitespace-nowrap group-hover:visible font-taviraj sm:text-sm text-xl">
+                    <li>I play guitar 🎸</li>
+                    <li>I like to travel 🌴</li>
+                    <li>I like to skateboard 🛹</li>
                 </div>
             </motion.div>            
         </div>
