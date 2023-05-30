@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-//import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md';
-import * as Icons from 'react-icons/md';
+
 
 
 export default function ThemeToggle(props:any) {
@@ -21,7 +20,7 @@ export default function ThemeToggle(props:any) {
                 document.documentElement.classList.remove('dark')
                 document.documentElement.classList.add('light')
             }
-        }}><Icons.MdOutlineDarkMode size={30} className='block dark:hidden hover:text-primary duration-300' id='darkIcon'></Icons.MdOutlineDarkMode>
-        <Icons.MdOutlineLightMode size={30} className='hidden dark:block hover:text-primary duration-300' id='lightIcon'></Icons.MdOutlineLightMode></motion.button>
+        }}><div className='block text-3xl dark:hidden grayscale hover:grayscale-0 duration-300' id='darkIcon'>{"🌙"}</div>
+        <div className='hidden grayscale hover:grayscale-0 text-3xl dark:block hover:text-primary duration-300' id='lightIcon'>{"☀️"}</div></motion.button>
     )
 }
