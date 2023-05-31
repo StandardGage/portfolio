@@ -41,5 +41,13 @@ const { title } = Astro.props;
 	a:hover {
 		color: var(--primary);
 		text-decoration: none;
+		transition-duration: 300ms;
+	}
+	:root.dark .ant-modal-content {
+		background-color: var(--secondary) !important;
+		color: white;
+	}
+	:root.dark .ant-modal-close {
+		color: white !important;
 	}
 </style>

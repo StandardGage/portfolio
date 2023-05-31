@@ -2,6 +2,7 @@ import { useState } from "react";
 import Socials from "../components/Socials";
 import { Modal, ConfigProvider } from "antd";
 
+
 export default function Contact() {
     const [modalOpen, setModalOpen] = useState(false);
 
@@ -18,12 +19,13 @@ export default function Contact() {
                 }}
             >
                 <Modal
+                className="dark:bg-primary-dark"
                 centered
                 open={modalOpen}
                 onCancel={()=>setModalOpen(false)}
                 footer={null}
                 >
-                <div className="flex flex-col justify-center items-center space-y-16">
+                <div className="flex flex-col justify-center items-center space-y-16 dark:text-white dark:bg-primary-dark ">
                     <div className="font-proza sm:text-2xl md:text-6xl lg:text-6xl">Contact Me</div>
                     <div className="font-telex text-4xl">Feel free to reach out!</div>
                     <div>
