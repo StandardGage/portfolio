@@ -45,9 +45,11 @@ const { title } = Astro.props;
 	}
 	:root.dark .ant-modal-content {
 		background-color: var(--secondary) !important;
-		color: white;
 	}
 	:root.dark .ant-modal-close {
 		color: white !important;
+	}
+	::selection {
+		background-color: var(--primary);
 	}
 </style>
