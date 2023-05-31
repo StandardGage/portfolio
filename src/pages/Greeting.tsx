@@ -9,7 +9,7 @@ export default function Greeting() {
                 initial={{x: -200}}
                 animate={{x: 0}}>
                 <div className="font-proza sm:text-5xl text-8xl text-left :">Hey,</div>
-                <div className="pb-2 font-proza sm:text-5xl text-8xl text-left whitespace-nowrap">I'm Gage</div>
+                <div className="flex pb-2 font-proza sm:text-5xl text-8xl text-left whitespace-nowrap">I'm&nbsp;<div className="text-primary">Gage</div></div>
             </motion.div>
             <motion.div className="group font-telex sm:text-sm text-2xl self-end justify-self-end whitespace-nowrap"
                 initial={{opacity:0}}
