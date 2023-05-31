@@ -3,7 +3,7 @@ import Socials from "../components/Socials";
 
 export default function Greeting() {
     return (
-        <div>
+        <div className="h-3/4">
         <div className="flex justify-between">
             <motion.div className="flex-col flex my-20 items-start"
                 initial={{x: -200}}
@@ -24,7 +24,7 @@ export default function Greeting() {
             </motion.div>            
         </div>
         <div className="w-2/5 text-left flex font-proza text-3xl">I'm an Honors Computer Science Major at the University of Delaware</div>
-        <Socials></Socials>
+        <div className="p-20"><Socials></Socials></div>
         </div>
     )
 }

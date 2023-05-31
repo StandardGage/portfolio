@@ -9,6 +9,8 @@ import Education from './Education';
 import Experience from './Experience';
 import 'devicon/devicon.min.css'
 import ThemeToggle from '../components/ThemeToggle';
+import { Modal } from 'antd'
+import Contact from './Contact';
 ---
 
 <Layout title="Gage Schuster's Portfolio">
@@ -22,7 +24,7 @@ import ThemeToggle from '../components/ThemeToggle';
 						<li class="button hover:text-primary"><a href="#projects">Projects</a></li>
 						<li class="button hover:text-primary"><a href="#education">Education</a></li>
 						<li class="button hover:text-primary"><a href="#experience">Experience</a></li>
-						<li class="button hover:text-primary"><a href="#contact">Contact</a></li>
+						<li class="button hover:text-primary"><a href="#contact"><Contact client:idle/></a></li>
 					</div>
 					<ThemeToggle client:load></ThemeToggle>
 				</ul>

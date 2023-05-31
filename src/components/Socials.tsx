@@ -4,15 +4,15 @@ import { MailOutlined, PrinterOutlined } from '@ant-design/icons';
 
 export function Social(props: {children:any}) {
     return (
-        <li className="flex justify-center items-center hover:text-primary duration-300">
+        <div className="flex justify-center items-center hover:text-primary duration-300">
                 {props.children}
-        </li>
+        </div>
     )
 }
 
 export default function Socials() {
     return (
-        <ul className="flex justify-center items-center space-x-10 m-24">
+        <ul className="flex justify-center items-center space-x-10 ">
             <Social><a href="mailto:gageschu@udel.edu">
                 <MailOutlined style={{fontSize:'2rem'}}></MailOutlined>
                 </a>
