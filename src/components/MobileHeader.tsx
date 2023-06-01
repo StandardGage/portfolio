@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useState } from "react";
 import Contact from "../pages/Contact";
 import { Modal } from "antd";
