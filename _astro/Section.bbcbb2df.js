@@ -1,0 +1,1 @@
+import{j as i}from"./jsx-runtime.00e89e00.js";import{m as e}from"./motion.e5708452.js";function n(t){return i.jsxs("div",{id:t.id,className:"pt-20",children:[i.jsx(e.div,{initial:{x:-100},animate:{x:0},className:"text-5xl sm:text-3xl py-10 text-start font-proza self-start",children:t.title}),t.children]})}export{n as S};
