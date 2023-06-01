@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RevealHeader from 'react-revealheader';
+import Greeting from './Greeting';
+import Skills from './Skills';
+import Projects from './Projects';
+import Education from './Education';
+import Experience from './Experience';
+import 'devicon/devicon.min.css'
+import ThemeToggle from '../components/ThemeToggle';
+import Contact from './Contact';
+import MobileHeader from '../components/MobileHeader';
+---
+
+<Layout title="Gage Schuster's Portfolio">
+	<main class="space-y-10 dark:text-white">
+		<RevealHeader  neutralColor='sm:dark:bg-neutral-900 sm:bg-white' upColor='dark:bg-neutral-900 bg-white' client:only>
+			<div class="p-8">
+				<ul class="px-25 m-auto max-w-[1264px] flex justify-between space-x-2 text-center">
+					<li class="max-w-sm text-center font-proza text-5xl cursor-default hover:text-primary duration-300 "><a href="#">GS</a></li>
+					<div class="flex-1 font-proza items-center justify-center space-x-4 lg:flex md:hidden sm:hidden">
+						<li class="button hover:text-primary"><a href="#skills">Skills</a></li>
+						<li class="button hover:text-primary"><a href="#projects">Projects</a></li>
+						<li class="button hover:text-primary"><a href="#education">Education</a></li>
+						<li class="button hover:text-primary"><a href="#experience">Experience</a></li>
+						<li class="button hover:text-primary"><Contact client:idle/></li>
+					</div>
+					<div class="flex justify-center items-center">
+						<div class="sm:hidden md:hidden">
+						<ThemeToggle client:load></ThemeToggle>
+						</div>
+						<div class="lg:hidden">
+						<MobileHeader client:load/>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</RevealHeader>
+		<div class='p-20 m-auto max-w-[1264px] space-y-10 sm:p-2'>
+			<Greeting client:load/>
+			<Skills client:load/>
+			<Projects client:load/>
+			<Education client:load/>
+			<Experience client:load/>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@800&family=Taviraj:wght@200&family=Telex&display=swap');
+
+	main {
+		text-align: center;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.button {
+		font-size: 1.5rem;
+		transition: color .3s ease-in-out;
+	}
+
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>

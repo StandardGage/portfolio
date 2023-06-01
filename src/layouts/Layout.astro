@@ -1,0 +1,56 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: #afb3a8;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #ff8000 30%, white 60%);
+		--primary: #ff8000;
+		--secondary: #1e1e1e;
+	}
+	:root.dark {
+		background-color: #1e1e1e;
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-color: #F6F6F6;
+	}
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+	a:hover {
+		color: var(--primary);
+		text-decoration: none;
+		transition-duration: 300ms;
+	}
+	:root.dark .ant-modal-content {
+		background-color: var(--secondary) !important;
+	}
+	:root.dark .ant-modal-close {
+		color: white !important;
+	}
+	::selection {
+		background-color: rgb(255,128,0 , 0.5);
+		opacity: 0.3;
+	}
+</style>
