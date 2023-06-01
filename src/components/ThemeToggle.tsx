@@ -20,7 +20,7 @@ export default function ThemeToggle(props:any) {
                 document.documentElement.classList.remove('dark')
                 document.documentElement.classList.add('light')
             }
-        }}><div className='block text-3xl dark:hidden grayscale hover:grayscale-0 duration-300' id='darkIcon'>{"🌙"}</div>
-        <div className='hidden grayscale hover:grayscale-0 text-3xl dark:block hover:text-primary duration-300' id='lightIcon'>{"☀️"}</div></motion.button>
+        }}><div className='block text-3xl dark:hidden grayscale sm:grayscale-0 md:grayscale-0 hover:grayscale-0 duration-300' id='darkIcon'>{"🌙"}</div>
+        <div className='hidden grayscale sm:grayscale-0 md:grayscale-0 hover:grayscale-0 text-3xl dark:block hover:text-primary duration-300' id='lightIcon'>{"☀️"}</div></motion.button>
     )
 }

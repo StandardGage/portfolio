@@ -11,6 +11,7 @@ import 'devicon/devicon.min.css'
 import ThemeToggle from '../components/ThemeToggle';
 import { Modal } from 'antd'
 import Contact from './Contact';
+import MobileHeader from '../components/MobileHeader';
 ---
 
 <Layout title="Gage Schuster's Portfolio">
@@ -24,9 +25,16 @@ import Contact from './Contact';
 						<li class="button hover:text-primary"><a href="#projects">Projects</a></li>
 						<li class="button hover:text-primary"><a href="#education">Education</a></li>
 						<li class="button hover:text-primary"><a href="#experience">Experience</a></li>
-						<li class="button hover:text-primary"><a href="#contact"><Contact client:idle/></a></li>
+						<li class="button hover:text-primary"><Contact client:idle/></li>
 					</div>
-					<ThemeToggle client:load></ThemeToggle>
+					<div class="flex justify-center items-center">
+						<div class="sm:hidden md:hidden">
+						<ThemeToggle client:load></ThemeToggle>
+						</div>
+						<div class="lg:hidden">
+						<MobileHeader client:load/>
+						</div>
+					</div>
 				</ul>
 			</div>
 		</RevealHeader>
