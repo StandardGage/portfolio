@@ -27,6 +27,12 @@ import smith from '../assets/smith.jpg';
 //agr
 import agr from '../assets/agr.jpg';
 
+//chirp
+import chirpgif from '../assets/chirp.gif';
+
+//react
+import react from '../assets/react.png';
+
 const socials = {
     socials: [
         {
@@ -60,49 +66,72 @@ const skills: {skills: SkillsType} = {
         Github: "devicon-github-original",
         Docker: "devicon-docker-plain",
         Photoshop: "devicon-photoshop-plain",
+        NPM: "devicon-npm-original-wordmark",
+        Javascript: "devicon-javascript-plain",
+        Git: "devicon-git-plain",
+        Shell: "devicon-bash-plain",
     }
 }
 
 const projects = {
     projects: [
         {
+            title: "React-RevealHeader",
+            partners: "Personal Project",
+            mainImage: react,
+            video: [],
+            link: "https://www.npmjs.com/package/react-revealheader",
+            description: "React component that reveals a header based on a user's scroll position",
+            images: [react],
+            skills: [skills.skills.Typescript, skills.skills.Javascript, skills.skills.React, skills.skills.NPM, skills.skills.CSS, skills.skills.HTML,skills.skills.Git, skills.skills.Github]
+        },
+        {
+            title: "Chirp",
+            partners: "Personal Project",
+            mainImage: chirpgif,
+            video: [],
+            link: "https://github.com/eorev/Chirp",
+            description: "Educational game that teaches users about algorithms and uses Firebase as a backend",
+            images: [chirpgif],
+            skills: [skills.skills.Typescript, skills.skills.Javascript, skills.skills.React, skills.skills.NPM, skills.skills.CSS, skills.skills.HTML,skills.skills.Git, skills.skills.Github]
+        },
+        {
             title: "TEMNet",
-            partners: "Part of Research for Perilla Lab",
+            partners: "Work Project",
             mainImage: temnet,
             video: [],
             link: "https://github.com/Perilla-lab/TEMNet",
-            description: "",
+            description: "Convolutional Neural Network backbone, designed for viral particle detection",
             images: [temnet],
-            skills: [skills.skills['C/C++'], skills.skills.Docker, skills.skills.Python, skills.skills.Github, skills.skills.Linux]
+            skills: [skills.skills.Python, skills.skills['C/C++'], skills.skills.Docker, skills.skills.Linux, skills.skills.Github]
         },
         {
             title: "Hawaiian Cleanup",
-            partners: "Game Development Project",
+            partners: "Academical Project",
             mainImage: game,
             video: [],
             link: "https://github.com/StandardGage/HawaiianCleanup",
-            description: "Game to educate children in Computer Science",
+            description: "Educational game about cleaning Hawaii and Programming using Phaser3 and TypeScript",
             images: [game],
-            skills: [skills.skills.Typescript, skills.skills.CSS, skills.skills.HTML]
+            skills: [skills.skills.Typescript, skills.skills.Javascript, skills.skills.CSS, skills.skills.HTML, skills.skills.Git, skills.skills.Github]
         },
         {
             title: "Capsid Visualizations",
-            partners: "Part of Research for Perilla Lab",
+            partners: "Work Project",
             mainImage: capsid,
             video: [],
             link: "https://www.artstation.com/artwork/9NoOdv",
-            description: "Exploring 3d visualizations for capsids",
+            description: "3D models of viral capsids to aid in the understanding of virus structure/function",
             images: [capsid, capsid2],
             skills: [skills.skills.Blender]
-            
         },
         {
             title: "Scientific Journal Candidates",
-            partners: "Part of Research for Perilla Lab",
+            partners: "Work Project",
             mainImage: virus,
             video: [],
             link: "https://www.artstation.com/artwork/14vlqo",
-            description: "Candidates for Scientific Journal Cover",
+            description: "3D models of a microsystem to supplement the findings of research",
             images: [virus, virus2, virus3],
             skills: [skills.skills.Blender]
         },
@@ -151,7 +180,7 @@ const education = {
                     "Intro to Software Engineering","Automata Theory","Logic for Programming","Intro to Algorithms",
                     "Calculus I","Calculus II","Discrete Mathematics" ],
             clubs: ["Alpha Gamma Rho - Finance Chair", "Spikeball Club", "Chess Club"],
-            awards: ["Honors Program", "Grand Scholars Program"]
+            awards: ["Honors Program", "Grand Scholars Program","2nd Place Beginner HenHacks 2023"]
         }
     ]
 }
@@ -161,31 +190,12 @@ const experience = {
         {
             role: "Teaching Assistant",
             company: "University of Delaware",
-            duration: "(February 2023 - Present)",
+            duration: "(February 2023 - May 2023)",
             image: smith,
             description: "",
-            responsibilities: ["Helping students with homework", "Grading assignments", "Helping students with projects", "Holding office hours"],
+            responsibilities: ["Assisted in the delivery of computer science coursework, reinforcing key concepts and theories through supplemental lectures,hands-on demonstrations, and personalized tutoring.", "Provided academic support to students, conducting office hours and review sessions, addressing individual queries, and contributing to students' understanding of complex computer science topics.", "Collaborated closely with the professor in planning and implementing lesson plans, grading assignments and exams, and maintaining an engaging and inclusive learning environment."],
             achievements: [],
-            skills: [skills.skills['C/C++'], skills.skills.Python, skills.skills.Linux, skills.skills.Github]
-        },
-        {
-            role: "Chief Financial Officer",
-            company: "Alpha Gamma Rho - Beta Upsilon",
-            duration: "(January 2023 - Present)",
-            image: agr,
-            description: "",
-            responsibilities: ["Managing the budget", "Managing the bank account", "Managing the treasury"],
-            achievements: [],
-        },
-        {
-            role: "Lab Assistant",
-            company: "University of Delaware",
-            duration: "(September 2022 - December 2022)",
-            image: udel,
-            description: "",
-            responsibilities: ["Helping students with homework", "Grading assignments", "Helping students with projects"],
-            achievements: [],
-            skills: [skills.skills['C/C++'], skills.skills.Python, skills.skills.Linux, skills.skills.Github]
+            skills: [skills.skills.Python, skills.skills['C/C++'], skills.skills.Shell, skills.skills.Linux, skills.skills.Github]
         },
         {
             role: "Undergraduate Researcher",
@@ -193,19 +203,19 @@ const experience = {
             duration: "(May 2022 - September 2022",
             image: brown,
             description: "",
-            responsibilities: [],
+            responsibilities: ["Conducted in-depth research and created detailed 3D models of microsystems, improving understanding and providing valuable visualization tools for academic study.","Collaborated in the development of a machine learning model capable of classifying viral particles, contributing to advancements in virology research and potential disease control methods.","Participated in academic meetings and seminars, presenting research findings to the faculty and peers, fostering a collaborative and innovative research environment."],
             achievements: [],
-            skills: [skills.skills['C/C++'], skills.skills.Python, skills.skills.Linux, skills.skills.Github, skills.skills.Docker, skills.skills.Blender]
+            skills: [skills.skills.Python, skills.skills['C/C++'], skills.skills.Shell, skills.skills.Blender, skills.skills.Docker, skills.skills.Linux, skills.skills.Github]
         },
         {
-            role: "Senior Information Technology Intern",
+            role: "Senior I.T. Intern",
             company: "Salesianum High School",
             duration: "(May 2021 - September 2022",
             image: salesianum,
             description: "",
-            responsibilities: ["Maintaining the school's network", "Maintaining the school's servers", "Maintaining the school's computers"],
+            responsibilities: ["Provided technical support and troubleshooting for hardware and software issues across the school, contributing to a smooth and efficient learning environment.", "Assisted in the maintenance and updates of school's computer systems, ensuring that all machines were up-to-date with the latest software patches and security measures.", "Aided in the implementation and training of new IT systems and software, helping staff and students to effectively utilize these tools in their daily activities."],
             achievements: [],
-            skills: [skills.skills.Windows, skills.skills.Linux, skills.skills.Github, skills.skills.Python, skills.skills['C/C++']]
+            skills: [skills.skills.Python, skills.skills['C/C++'], skills.skills.Windows, skills.skills.Linux, skills.skills.Github]
         }
 
     ]

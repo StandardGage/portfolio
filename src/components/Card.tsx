@@ -37,12 +37,12 @@ export default function Card(props: any) {
           WebkitBackfaceVisibility: "hidden",
           backgroundImage: `url(${props.image})`,
           backgroundSize: "cover",
-          backgroundPosition: "center center",
+          backgroundPosition: "bottom -2rem center",
           backgroundRepeat: "no-repeat",
         }}
         className="shadow-md absolute dark:text-black rounded-xl min-w-full min-h-full"
       >
-        <div className="p-1 rounded-t-xl text-accent h-28 bg-secondary dark:dark:bg-[#37373a]">{props.front}</div>
+        <div className="p-1 rounded-t-xl text-accent h-fit bg-secondary dark:dark:bg-[#37373a]">{props.front}</div>
       </motion.div>
       <motion.div
         animate={flipped ? "flipped" : "rest"}
@@ -50,7 +50,7 @@ export default function Card(props: any) {
         variants={back}
         transition={{ duration: 0.6 }}
         style={{ transformStyle: "preserve-3d", backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden" }}
-        className="overflow-y-auto overflow-x-clip absolute bg-inherit backdrop-brightness-95 dark:bg-[#37373a] rounded-xl shadow-md min-w-full min-h-full max-h-[314px]"
+        className="overflow-y-auto overflow-x-wrap absolute bg-inherit backdrop-brightness-95 dark:bg-[#37373a] rounded-xl shadow-md min-w-full min-h-full max-h-[314px]"
       >
         {props.back}
       </motion.div>

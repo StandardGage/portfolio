@@ -27,8 +27,8 @@ export default function Experience() {
                                     <div key={i} className={`scale-150 p-2 ${skill}`}></div>
                                 ))}
                                 </div>
-                                <Collapsible label={"Summary"}>{job.description}</Collapsible>
-                                <Collapsible label={"Responsibilities"}><div className="mx-9 text-sm text-left font-telex whitespace-pre">{'• '+job.responsibilities.join("\n• ")}</div></Collapsible>
+                                
+                                <Collapsible label={"Responsibilities"}><div className="mx-9 text-sm text-left font-telex whitespace-pre-wrap">{'• '+job.responsibilities.join("\n• ")}</div></Collapsible>
                             </div>
                         }
                     ></Card>
