@@ -33,6 +33,9 @@ import chirpgif from '../assets/chirp.gif';
 //react
 import react from '../assets/react.png';
 
+//underthescope
+import underthescope from '../assets/underthescope.png'
+
 const socials = {
     socials: [
         {
@@ -75,6 +78,16 @@ const skills: {skills: SkillsType} = {
 
 const projects = {
     projects: [
+        {
+            title: "Under the Scope",
+            partners: "Work Project",
+            mainImage: underthescope,
+            video: [],
+            link: "https://underthescope.udel.edu/",
+            desciption: "",
+            images: [underthescope],
+            skills: []
+        },
         {
             title: "React-RevealHeader",
             partners: "Personal Project",
@@ -162,15 +175,6 @@ const projects = {
 const education = {
     schools: [
         {
-            schoolName: "Salesianum High School",
-            title: "Honors Student",
-            date: "(August 2017 - May 2021)",
-            image: salesianum,
-            classes: ["Intro to Python", "A.P. Computer Science - 5/5", "Game Dev Independent Study", "Networking Independent Study"],
-            clubs: ["Computer Science Club - President", "National Honor Society", "Science Olympiad", "Track"],
-            awards: ["Bebras Computing Challenge", "Silver for Computer Science"]
-        },
-        {
             schoolName: "University of Delaware",
             title: "Honors Computer Science",
             date: "(August 2021 - May 2025)",
@@ -181,12 +185,31 @@ const education = {
                     "Calculus I","Calculus II","Discrete Mathematics" ],
             clubs: ["Alpha Gamma Rho - Finance Chair", "Spikeball Club", "Chess Club"],
             awards: ["Honors Program", "Grand Scholars Program","2nd Place Beginner HenHacks 2023"]
-        }
+        },
+        {
+            schoolName: "Salesianum High School",
+            title: "Honors Student",
+            date: "(August 2017 - May 2021)",
+            image: salesianum,
+            classes: ["Intro to Python", "A.P. Computer Science - 5/5", "Game Dev Independent Study", "Networking Independent Study"],
+            clubs: ["Computer Science Club - President", "National Honor Society", "Science Olympiad", "Track"],
+            awards: ["Bebras Computing Challenge", "Silver for Computer Science"]
+        },
     ]
 }
 
 const experience = {
     jobs: [
+        {
+            role: "Web Developer",
+            company: "Sea Grant & UD CEOE",
+            duration: "(May 2023 - Present)",
+            image: underthescope,
+            description: "",
+            responsibilities: [],
+            achievements: [],
+            skills: []
+        },
         {
             role: "Teaching Assistant",
             company: "University of Delaware",

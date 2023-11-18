@@ -19,11 +19,11 @@ export default function Greeting() {
                 <div className="m-2 pl-14 sm:pl-0 text-left sm:text-xs flex flex-col whitespace-nowrap group-hover:visible font-taviraj text-xl">
                     <li>I play guitar 🎸</li>
                     <li>I like to travel 🌴</li>
-                    <li>I like to skateboard 🛹</li>
+                    <li>I like to surf 🏄🏻‍♂️</li>
                 </div>
             </motion.div>            
         </div>
-        <div className="w-2/5 text-left flex font-proza text-3xl">I'm an Honors Computer Science Major at the University of Delaware</div>
+        <div className="w-2/5 text-left flex font-proza text-3xl">I'm an Honors Computer Science Major + Computer Engineer Minor at the University of Delaware</div>
         <div className="p-20"><Socials></Socials></div>
         </div>
     )
