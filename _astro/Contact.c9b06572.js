@@ -1,0 +1,1 @@
+import{a as f}from"./Contact.3162fcb6.js";import"./index.fe07b45d.js";import"./Socials.eb9bd26e.js";import"./portfolio.15716a5d.js";import"./jsx-runtime.00e89e00.js";import"./AntdIcon.05976f51.js";import"./index.09206aab.js";export{f as default};
