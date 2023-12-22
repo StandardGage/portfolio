@@ -34,7 +34,7 @@ import chirpgif from '../assets/chirp.gif';
 import react from '../assets/react.png';
 
 //underthescope
-import underthescope from '../assets/underthescope.png'
+import underthescope from '../assets/underthescope.jpg'
 
 const socials = {
     socials: [
@@ -84,9 +84,9 @@ const projects = {
             mainImage: underthescope,
             video: [],
             link: "https://underthescope.udel.edu/",
-            desciption: "",
+            description: "Website which showcases research about ocean and marine life",
             images: [underthescope],
-            skills: []
+            skills: [skills.skills.HTML, skills.skills.CSS]
         },
         {
             title: "React-RevealHeader",
@@ -203,7 +203,7 @@ const experience = {
         {
             role: "Web Developer",
             company: "Sea Grant & UD CEOE",
-            duration: "(May 2023 - Present)",
+            duration: "(May 2023 - Dec 2023)",
             image: underthescope,
             description: "",
             responsibilities: [],
