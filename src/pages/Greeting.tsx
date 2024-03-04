@@ -11,7 +11,7 @@ export default function Greeting() {
                 <div className="font-proza sm:text-5xl text-8xl text-left :">Hey,</div>
                 <div className="flex pb-2 font-proza sm:text-5xl text-8xl text-left whitespace-nowrap">I'm&nbsp;<div className="text-primary">Gage</div></div>
             </motion.div>
-            <motion.div className="group font-telex sm:text-sm sm:text-left text-2xl self-end justify-self-end sm:items-start sm:justify-start whitespace-nowrap"
+            <motion.div className="group font-telex sm:text-sm sm:text-left self-center justify-center text-2xl whitespace-nowrap"
                 initial={{opacity:0}}
                 animate={{opacity:1}}
                 transition={{delay:.3}}>
@@ -23,7 +23,7 @@ export default function Greeting() {
                 </div>
             </motion.div>            
         </div>
-        <div className="w-2/5 text-left flex font-proza text-3xl">I'm an Honors Computer Science Major + Computer Engineer Minor at the University of Delaware</div>
+        <div className="lg:w-2/5 w-1/2 text-left font-proza sm:text-xl text-3xl"><p>I'm an <a className="underline">Honors Computer Science Major</a> & <a className="underline">Computer Engineer Minor</a> at the University of Delaware</p></div>
         <div className="p-20"><Socials></Socials></div>
         </div>
     )
