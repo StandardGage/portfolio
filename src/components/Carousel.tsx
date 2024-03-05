@@ -27,7 +27,7 @@ export default function Carousel(props: { children: any[]; }) {
                 setIndex(index + 1)
             }
             
-            }} className={`cursor-pointer flex items-center sm:h-24 h-52 ${items.length < 2 ? 'invisible' : ''}`}></RightOutlined ></motion.div>
+            }} className={`cursor-pointer flex items-center  h-52 ${items.length < 2 ? 'invisible' : ''}`}></RightOutlined ></motion.div>
         </div>
     )
 }

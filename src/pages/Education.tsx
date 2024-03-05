@@ -16,26 +16,8 @@ export default function Education() {
                 {education.schools.map((school, i) => {
                     return (
                         <>
-                            <Card
-                        key = {i}
-                        image = {school.image}
-                        front= {
-                            <>
-                            <div className="font-proza">{school.schoolName}</div>
-                            <div className="font-telex">{school.title}</div>
-                            <div className="font-taviraj">{school.date}</div>
-                            </>
-                        }
-                        back = {
-                            <>
-                            <Collapsible label={"Classes"}><div className="mx-9 text-sm text-left font-telex whitespace-pre">{'• '+school.classes.join('\n• ')}</div></Collapsible>
-                            <Collapsible label={"Clubs/Activities"}><div className="mx-9 text-sm text-left font-telex whitespace-pre">{'• '+school.clubs.join('\n• ')}</div></Collapsible>
-                            <Collapsible label={"Awards"}><div className="mx-9 text-sm text-left font-telex whitespace-pre">{'• '+school.awards.join('\n• ')}</div></Collapsible>
-                            </>
-                        }
-                        >
-                        </Card>
-                        <CardModal image={school.image} title={school.schoolName} subtitle={school.schoolName} date={school.date}>
+                            
+                        <CardModal width={'clamp(100px, 70vw, 800px)'} height={'clamp(100px, 30vh, 800px)'} image={school.image} title={school.schoolName} subtitle={school.title} date={school.date}>
                             <Collapsible label={"Classes"}><div className="mx-9 text-sm text-left font-telex whitespace-pre">{'• '+school.classes.join('\n• ')}</div></Collapsible>
                             <Collapsible label={"Clubs/Activities"}><div className="mx-9 text-sm text-left font-telex whitespace-pre">{'• '+school.clubs.join('\n• ')}</div></Collapsible>
                             <Collapsible label={"Awards"}><div className="mx-9 text-sm text-left font-telex whitespace-pre">{'• '+school.awards.join('\n• ')}</div></Collapsible>

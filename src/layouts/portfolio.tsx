@@ -34,7 +34,7 @@ import chirpgif from '../assets/chirp.gif';
 import react from '../assets/react.png';
 
 //underthescope
-import underthescope from '../assets/underthescope.jpg'
+import underthescope from '../assets/underthescope.png'
 
 const socials = {
     socials: [

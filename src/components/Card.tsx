@@ -39,6 +39,7 @@ export default function Card(props: any) {
           backgroundSize: "cover",
           backgroundPosition: "bottom -2rem center",
           backgroundRepeat: "no-repeat",
+          userSelect: "none",
         }}
         className="shadow-md absolute dark:text-black rounded-xl min-w-full min-h-full"
       >

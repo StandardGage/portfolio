@@ -5,6 +5,7 @@ import Carousel from "../components/Carousel";
 import type { Key } from "react";
 import Section from "../components/Section";
 import HorizontalCarousel from "../components/HorizontalCarousel";
+import CardModal from "../components/CardModal";
 
 
 function getMedia(project: { images: string[]; video: string[]; }) {
@@ -14,6 +15,7 @@ function getMedia(project: { images: string[]; video: string[]; }) {
     ))
     project.images.map((image: string, i: Key) => media.push(
         <motion.img
+        draggable={false}
         loading="eager"
         alt={image}
         whileTap={{scale:1.6}}
@@ -45,14 +47,14 @@ export default function Projects() {
                         </div>
                     }
                     back={
-                        <div>
+                        <div className="m-auto">
                             <div className="font-proza">{project.title}</div>
                             <div className="font-telex">{project.partners}</div>
                             <Carousel>
                                 {getMedia(project)}
                             </Carousel>
-                            <a className="underline font-taviraj self-end hover:text-primary duration-300" target="_blank" href={project.link}>View Project</a>
-                            <div className="flex self-end justify-center space-x-4 my-2">
+                            <a className="underline font-taviraj hover:text-primary duration-300" target="_blank" href={project.link}>View Project</a>
+                            <div className="flex justify-center space-x-4 my-2">
                             {project.skills.map((skill,i) => {
                                 return (
                                     <div key={i} className="scale-150">
@@ -72,36 +74,27 @@ export default function Projects() {
             <HorizontalCarousel>
             {projects.projects.map((project, i) => {
                 return (
-                    <Card
-                    key = {i}
-                    image = {project.mainImage}
-                    front={
+                    <>
+                    <div style={{maxWidth:'314px'}} className="grow shrink-0">
+                    <CardModal width={'314px'} height={'314px'} image={project.mainImage} title={project.title} subtitle={project.partners} date={project.description}>
                         <div>
-                            <div className="font-proza ">{project.title}</div>
-                            <div className="font-telex">{project.partners}</div>
-                            <div className="font-taviraj">{project.description}</div>
+                        <a className=" underline font-taviraj hover:text-primary duration-300" target="_blank" href={project.link}>View Project</a>
+                        <div className="flex justify-center space-x-4 my-2">
+                        {project.skills.map((skill,i) => {
+                            return (
+                                <div key={i} className="scale-150">
+                                <div className={skill}></div>
+                                </div>
+                            )
+                        })}
                         </div>
-                    }
-                    back={
-                        <div>
-                            <div className="font-proza">{project.title}</div>
-                            <div className="font-telex">{project.partners}</div>
-                            <Carousel>
-                                {getMedia(project)}
-                            </Carousel>
-                            <a className="underline font-taviraj self-end" target="_blank" href={project.link}>View Project</a>
-                            <div className="flex self-end justify-center space-x-4 my-2">
-                            {project.skills.map((skill,i) => {
-                                return (
-                                    <div key={i} className="scale-150">
-                                    <div className={skill}></div>
-                                    </div>
-                                )
-                            })}
-                            </div>
                         </div>
-                    }>
-                    </Card>
+                        
+                    </CardModal>
+                    </div>
+                    
+                    </>
+                    
                 )
             })}
             </HorizontalCarousel>
