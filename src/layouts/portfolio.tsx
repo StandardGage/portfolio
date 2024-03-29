@@ -206,61 +206,94 @@ const education = {
 }
 
 const experience = {
-    jobs: [
-        {
-            role: "Web Developer",
-            company: "Marcus Henry for County Executive",
-            duration: "(February 2024 - March 2024)",
-            image: marcus,
-            description: "",
-            responsibilities: [],
-            achievements: [],
-            skills: []
-        },
-        {
-            role: "Web Developer",
-            company: "Sea Grant & UD CEOE",
-            duration: "(May 2023 - December 2023)",
-            image: underthescope,
-            description: "",
-            responsibilities: [],
-            achievements: [],
-            skills: []
-        },
-        {
-            role: "Teaching Assistant",
-            company: "University of Delaware",
-            duration: "(February 2023 - May 2023)",
-            image: smith,
-            description: "",
-            responsibilities: ["Assisted in the delivery of computer science coursework, reinforcing key concepts and theories through supplemental lectures,hands-on demonstrations, and personalized tutoring.", "Provided academic support to students, conducting office hours and review sessions, addressing individual queries, and contributing to students' understanding of complex computer science topics.", "Collaborated closely with the professor in planning and implementing lesson plans, grading assignments and exams, and maintaining an engaging and inclusive learning environment."],
-            achievements: [],
-            skills: [skills.skills.Python, skills.skills['C/C++'], skills.skills.Shell, skills.skills.Linux, skills.skills.Github]
-        },
-        {
-            role: "Undergraduate Researcher",
-            company: "University of Delaware",
-            duration: "(May 2022 - September 2022",
-            image: brown,
-            description: "",
-            responsibilities: ["Conducted in-depth research and created detailed 3D models of microsystems, improving understanding and providing valuable visualization tools for academic study.","Collaborated in the development of a machine learning model capable of classifying viral particles, contributing to advancements in virology research and potential disease control methods.","Participated in academic meetings and seminars, presenting research findings to the faculty and peers, fostering a collaborative and innovative research environment."],
-            achievements: [],
-            skills: [skills.skills.Python, skills.skills['C/C++'], skills.skills.Shell, skills.skills.Blender, skills.skills.Docker, skills.skills.Linux, skills.skills.Github]
-        },
-        {
-            role: "Senior I.T. Intern",
-            company: "Salesianum High School",
-            duration: "(May 2021 - September 2022",
-            image: salesianum,
-            description: "",
-            responsibilities: ["Provided technical support and troubleshooting for hardware and software issues across the school, contributing to a smooth and efficient learning environment.", "Assisted in the maintenance and updates of school's computer systems, ensuring that all machines were up-to-date with the latest software patches and security measures.", "Aided in the implementation and training of new IT systems and software, helping staff and students to effectively utilize these tools in their daily activities."],
-            achievements: [],
-            skills: [skills.skills.Python, skills.skills['C/C++'], skills.skills.Windows, skills.skills.Linux, skills.skills.Github]
-        }
-
-    ]
-
-}
+  jobs: [
+    {
+      role: "Web Developer",
+      company: "Marcus Henry for County Executive",
+      duration: "(February 2024 - March 2024)",
+      image: marcus,
+      responsibilities: [
+        "Created mockups for client to view implementation of website design changes.",
+        "Ensured a smooth transition to a cleaner design for improved user experience.",
+      ],
+      achievements: [],
+      skills: [],
+    },
+    {
+      role: "Web Developer",
+      company: "Sea Grant & UD CEOE",
+      duration: "(May 2023 - December 2023)",
+      image: underthescope,
+      description: "",
+      responsibilities: [
+        "Led the conversion of a company’s website from Drupal to WordPress, resulting in enhanced host experience.",
+        "Implemented custom WordPress themes and plugins to replicate the original website’s functionality.",
+      ],
+      achievements: [],
+      skills: [],
+    },
+    {
+      role: "Teaching Assistant",
+      company: "University of Delaware",
+      duration: "(February 2023 - May 2023)",
+      image: smith,
+      description: "",
+      responsibilities: [
+        "Assisted in the delivery of computer science coursework, reinforcing key concepts and theories.",
+        "Provided academic support to students, conducting office hours and review sessions.",
+      ],
+      achievements: [],
+      skills: [
+        skills.skills.Python,
+        skills.skills["C/C++"],
+        skills.skills.Shell,
+        skills.skills.Linux,
+        skills.skills.Github,
+      ],
+    },
+    {
+      role: "Undergraduate Researcher",
+      company: "University of Delaware",
+      duration: "(May 2022 - September 2022",
+      image: brown,
+      description: "",
+      responsibilities: [
+        "Conducted in-depth research and created detailed 3D models of microsystems.",
+        "Collaborated in the development of a machine learning model capable of classifying viral particles.",
+      ],
+      achievements: [],
+      skills: [
+        skills.skills.Python,
+        skills.skills["C/C++"],
+        skills.skills.Shell,
+        skills.skills.Blender,
+        skills.skills.Docker,
+        skills.skills.Linux,
+        skills.skills.Github,
+      ],
+    },
+    {
+      role: "Senior I.T. Intern",
+      company: "Salesianum High School",
+      duration: "(May 2021 - September 2022",
+      image: salesianum,
+      description: "",
+      responsibilities: [
+        "Provided technical support and troubleshooting for hardware and software issues across the school, contributing to a smooth and efficient learning environment.",
+        "Assisted in the maintenance and updates of school's computer systems, ensuring that all machines were up-to-date with the latest software patches and security measures.",
+        "Aided in the implementation and training of new IT systems and software, helping staff and students to effectively utilize these tools in their daily activities.",
+      ],
+      achievements: [],
+      skills: [
+        skills.skills.Python,
+        skills.skills["C/C++"],
+        skills.skills.Windows,
+        skills.skills.Linux,
+        skills.skills.Github,
+      ],
+    },
+  ],
+};
 
 export {
     socials,

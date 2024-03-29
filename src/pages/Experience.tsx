@@ -19,7 +19,7 @@ export default function Experience() {
                                     <div key={i} className={`scale-150 p-2 ${skill}`}></div>
                                 ))}
                                 </div>
-                        <Collapsible label={"Summary"}>{job.description}</Collapsible>
+                        {job.description && <Collapsible label={"Summary"}>{job.description}</Collapsible>}
                         <Collapsible label={"Responsibilities"}><div className="mx-9 text-sm text-left font-telex overflow-auto whitespace-pre-wrap">{'• '+job.responsibilities.join("\n• ")}</div></Collapsible>
                     </CardModal>
                     </>
@@ -36,7 +36,7 @@ export default function Experience() {
                                     <div key={i} className={`scale-150 p-2 ${skill}`}></div>
                                 ))}
                                 </div>
-                        <Collapsible label={"Summary"}>{job.description}</Collapsible>
+                                {job.description && <Collapsible label={"Summary"}>{job.description}</Collapsible>}
                         <Collapsible label={"Responsibilities"}><div className="mx-9 text-sm text-left font-telex overflow-auto whitespace-pre-wrap">{'• '+job.responsibilities.join("\n• ")}</div></Collapsible>
                         </CardModal>
                     </div>
