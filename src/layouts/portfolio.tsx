@@ -36,6 +36,9 @@ import react from '../assets/react.png';
 //underthescope
 import underthescope from '../assets/underthescope.png'
 
+//marcus
+import marcus from '../assets/marcus.jpg';
+
 const socials = {
     socials: [
         {
@@ -206,8 +209,18 @@ const experience = {
     jobs: [
         {
             role: "Web Developer",
+            company: "Marcus Henry for County Executive",
+            duration: "(February 2024 - March 2024)",
+            image: marcus,
+            description: "",
+            responsibilities: [],
+            achievements: [],
+            skills: []
+        },
+        {
+            role: "Web Developer",
             company: "Sea Grant & UD CEOE",
-            duration: "(May 2023 - Dec 2023)",
+            duration: "(May 2023 - December 2023)",
             image: underthescope,
             description: "",
             responsibilities: [],
