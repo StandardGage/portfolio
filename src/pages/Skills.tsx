@@ -8,7 +8,7 @@ export default function Skills() {
       <ol className="flex flex-wrap sm:gap-3 gap-10 justify-center">
         {sk.map((skill) => (
           <div
-            className="w-32 h-24 sm:w-20 sm:h-22 bg-neutral-200 rounded-lg shadow-md"
+            className="w-32 h-24 sm:w-20 sm:h-22 bg-neutral-200 dark:bg-neutral-800 rounded-lg shadow-md"
             key={skill}
           >
             <div className={`${skills.skills[skill]} mt-6 scale-150`}></div>
