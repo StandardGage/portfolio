@@ -1,4 +1,4 @@
-import { type Variant, type Variants, motion } from "framer-motion";
+import { Variant, Variants, motion } from "framer-motion";
 import { useState } from "react";
 
 const front: Variants = {
@@ -18,8 +18,6 @@ export default function Card(props: any) {
   const flipCard = () => {
     setFlipped(!flipped);
   };
-
-  console.log(props.images);
 
   return (
     <motion.div
