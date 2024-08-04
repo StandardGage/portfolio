@@ -19,8 +19,6 @@ export default function Card(props: any) {
     setFlipped(!flipped);
   };
 
-  console.log(props.images);
-
   return (
     <motion.div
       onClick={() => flipCard()}
