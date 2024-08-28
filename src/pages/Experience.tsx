@@ -30,7 +30,7 @@ export default function Experience() {
             <HorizontalCarousel>
                 {experience.jobs.map((job, i) => (
                     <div className="grow shrink-0">
-                        <CardModal width={'300px'} height={'250px'} image={job.image} title={job.role} subtitle={job.company} date={job.duration}>
+                        <CardModal width={'300px'} height={'250px'} image={job.image} url={job.url} title={job.role} subtitle={job.company} date={job.duration}>
                         <div className="m-4 flex justify-center">
                                 {job.skills?.map((skill, i) => (
                                     <div key={i} className={`scale-150 p-2 ${skill}`}></div>
