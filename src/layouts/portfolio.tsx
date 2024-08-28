@@ -289,6 +289,16 @@ const experience = {
         " Using NextJS and Go, developed a fullstack product for viewing images judged with an LLM.",
         "Worked within an agile development environment, meeting sprint goals consistently.",
       ],
+      achievements: [],
+      skills: [
+        skills.skills.Typescript,
+        skills.skills.Javascript,
+        skills.skills.Go,
+        skills.skills.NextJS,
+        skills.skills.React,
+        skills.skills.Git,
+        skills.skills.Github,
+      ],
     },
     {
       role: "Web Developer",
@@ -301,7 +311,7 @@ const experience = {
         "Ensured a smooth transition to a cleaner design for improved user experience.",
       ],
       achievements: [],
-      skills: [],
+      skills: [skills.skills.Wordpress, skills.skills.HTML, skills.skills.CSS],
     },
     {
       role: "Web Developer",
@@ -315,7 +325,7 @@ const experience = {
         "Implemented custom WordPress themes and plugins to replicate the original website’s functionality.",
       ],
       achievements: [],
-      skills: [],
+      skills: [skills.skills.Wordpress, skills.skills.HTML, skills.skills.CSS],
     },
     {
       role: "Teaching Assistant",
