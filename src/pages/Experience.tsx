@@ -13,7 +13,7 @@ export default function Experience() {
                 {experience.jobs.map((job, i) => (
                     <>
 
-                    <CardModal width={'clamp(100px, 30vw, 800px)'} height={'clamp(100px, 30vh, 800px)'} image={job.image} title={job.role} subtitle={job.company} date={job.duration}>
+                    <CardModal width={'clamp(100px, 30vw, 800px)'} height={'clamp(100px, 30vh, 800px)'} image={job.image} url={job.url} title={job.role} subtitle={job.company} date={job.duration}>
                         <div className="m-4 flex justify-center">
                                 {job.skills?.map((skill, i) => (
                                     <div key={i} className={`scale-150 p-2 ${skill}`}></div>

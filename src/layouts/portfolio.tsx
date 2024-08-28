@@ -294,6 +294,7 @@ const experience = {
       role: "Web Developer",
       company: "Marcus Henry for County Executive",
       duration: "(February 2024 - March 2024)",
+      url: "https://marcushenryde.com/",
       image: marcus,
       responsibilities: [
         "Created mockups for client to view implementation of website design changes.",
@@ -306,6 +307,7 @@ const experience = {
       role: "Web Developer",
       company: "Sea Grant & UD CEOE",
       duration: "(May 2023 - December 2023)",
+      url: "https://underthescope.udel.edu/",
       image: underthescope,
       description: "",
       responsibilities: [
